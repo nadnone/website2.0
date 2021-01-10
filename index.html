@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+    <head>
+      <meta charset="utf-8">
+      <link rel="stylesheet" href="master.css">
+      <link rel="shortcut icon" href="res/logo_nf.png">
+
+      
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+      
+      <script src="config/skills.js"></script>
+      <link rel="stylesheet" href="plugins/uikit/css/uikit.min.css">
+      <script src="plugins/uikit/js/uikit.min.js"></script>
+      <script src="plugins/uikit/js/uikit-icons.min.js"></script>
+      <script src="main.js" charset="utf-8"></script>
+
+      <title>Nadir Felder | Portfolio</title>
+
+      <meta name="description" content="Par la visite de ce lieu, vous découvrirez une personne qui a pour hobby le développement informatique">
+
+      <!--open graphic protocol START -->
+      <meta property="og:title" content="Nadir Felder | Portfolio" />
+      <meta property="og:type" content="website" />
+      <meta property="og:url" content="https://nadirFelder.xyz" />
+      <meta property="og:image" content="https://nadirfelder.xyz/res/logo_nf.png" />
+      <meta property="og:description" content="Par la visite de ce lieu, vous découvrirez une personne qui a pour hobby le développement informatique" />
+      <meta name="theme-color" content="#ffffff">
+      <!-- open graphic protocol END-->
+
+  </head>
+
+  <body>
+        
+    
+        <div id="box_info">
+          xxx
+        </div>
+
+
+
+    <div class="bg">
+      <div class="super_container">
+        <div class="container">
+          <div class="titre">
+            Nadir Felder
+          </div>
+          <div class="sous_titre">
+            curieux, polyvalent et autodidacte
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="menubg" onmouseover='closeSkillShow()' class="menubg">
+      <div id="main" class="main">
+          <div class="bubble">
+              <div onclick=""class="logo"></div>
+          </div>
+        <div class="container">
+          
+          <div onclick="goButton('think')" class="button">
+            À propos
+          </div>
+          <div onclick="goButton('Skills')" class="button">
+            Skills
+          </div>
+          <div onclick="goButton('Links')" class="button">
+            Liens
+          </div>
+          <div onclick="goButton('Contact')" class="button">
+            Contact
+          </div>
+
+          </div>
+      </div>
+      <div class="footer">
+          Fait par Nadir Felder. Merci à Phoenix Rigo et Rafael Reyes pour l'image de fond. Merci à Thibault Blaser pour le logo
+
+          <font class="link" onclick="goLink('https://www.ovh.com/fr/support/mentions-legales/');">Hebergement: OVH</font>
+      </div>
+    </div>
+
+    <div class="scroll_popup">
+
+
+
+
+
+
+
+
+      <div id="think" class="popup">
+          <div class="titre">
+            À propos de moi
+          </div>
+          <div class="contenu">
+            <span>
+              Je suis une personne de 
+              <span id="mon_age"></span> ans au parcours plutôt atypique qui vit dans le canton de Neuchâtel.<br />
+              <br />
+              Passionné d’informatique depuis mon enfance, je m'intéresse beaucoup à l'électronique et l’informatique en général, je commence à démonter beaucoup d’appareils
+              électroniques qui me passent au travers des mains, dans le but de vouloir comprendre leur fonctionnement. En vacance, je m'intéressais à l'électronique via un
+              membre de ma famille.<br />
+              <br />
+              Passant par une scolarité obligatoire classique, je choisis de faire un CFC électronicien car, proche du métier d’informatique, je pensais qu’il me plairait,
+              cependant ce n’était pas le cas, en raison de l’école mais aussi du programme dans lequel je ne m'épanouit pas. Je me tourne donc vers un lycée privé en
+              quittant ma formation en école technique. Une fois dans ce gymnase, je passe environ 1 an et demi avant de partir pour des raisons médicales.<br />
+              <br />
+              Deux ans après, je reprend le chemin de la formation CFC à mes 21 ans, mais je la quitte en 2018. Cela dit, pendant tout ce temps depuis mes 16 ans, j’apprends à mes heures 
+              perdues à programmer en tant qu’autodidacte. Je survole plusieurs langages et notions. Bien-sûr, j’ai encore beaucoup à apprendre aujourd’hui.</br>
+              <br/>
+              En 2018, dans le cadre d’une formation en alternance, je participe à des projets et me forme de façon plus poussée à certains langages comme le JavaScript, PHP, un peu de C#,
+              des notions vagues de 3D comme le blocage de cadran, une introduction aux shaders d’openGL, les calculs matriciels carrés, de la 2D où j'y fais un jeu deux joueurs,
+              j’y ai gagné de meilleures connaissances en réseau, et ai vaguement approché la norme IPv6. J’ai aussi été mieux sensibilisé à l’indentation et l’ergonomie.
+              Après avoir quitté ma formation, j’ai continué à me former tout seul chez moi, dont certains projets sont publiés sur <a style="color: black; text-decoration: underline;" href="https://github.com/spoutnik911"> ma page GitHub</a>. J’ai aussi découvert
+              via les services de Discord, des outils comme Trello.</br>
+              <table>
+                <tr><td class="li">2016</td><td>Commencement de mon apprentissage plus sérieux grâce au site de OpenClassrooms, anciennement Le site du zéro.</td></tr>
+                <tr><td class="li">2017</td><td>Révision, acquisition de mes connaissances et formation parallèle en alternance.</td></tr>
+                <tr><td class="li">Septembre 2020</td><td>Reprise de cours théoriques en ligne et révision de l'anglais.</td></tr>
+                <tr><td class="li">Décembre 2020</td><td>Recherche de stages dans le vaste domaine de l’informatique.</td></tr>
+              </table>
+              Aujourd’hui, je suis motivé à trouver des stages ou petits jobs à mi-temps pour me réintégrer dans la vie active, mais
+              aussi dans le but de développer mes connaissances autodidactes. Je recherche aussi à reprendre le chemin des études.
+            </span>
+          </div>
+          <div onclick="goBack(this)" class="back">
+            Retour
+          </div>
+      </div>
+
+
+
+
+
+
+      <div id="Links" class="popup">
+        <div class="titre">
+          Liens
+        </div>
+        <div class="categorie">
+          <div onclick='goLink("https://github.com/spoutnik911")' class="cat">
+            GItHub
+          </div>
+          <div onclick='goLink("https://www.sololearn.com/Profile/4957650")' class="cat">
+            Sololearn
+          </div>
+          <div onclick='goLink("https://spoutnik911.github.io/DactyloLibre-CsharpVersion/")' class="cat">
+            DactyloLibre (Projet)
+          </div>
+        </div>
+        <div onclick="goBack(this)" class="back">
+          Retour
+        </div>
+      </div>
+
+
+
+
+
+
+      <div id="Contact" class="popup">
+          <div class="titre">
+              Contact
+          </div>
+          <div class="contenu">
+              Vous pouvez me contacter avec le bouton suivant
+          </div>
+          <div class="categorie">
+              <div ondblclick="this.innerText = 'E-mail'" onmouseover="this.innerText = 'nad@nadirFelder.xyz'" onclick='window.open("mailto:nad@nadirFelder.xyz")'  class="cat">
+                  E-mail
+              </div>
+          </div>
+          <div onclick="goBack(this)" class="back">
+              Retour
+          </div>
+      </div>
+
+
+
+
+
+
+
+
+      <div id="Skills" class="popup">
+        <div class="titre">
+          Compétences
+        </div>
+        <div class="contenu" onmouseover="closeSkillShow()">
+        <!--   <div class="skillbox">
+            <div class="title"></div>
+            <div id="skillDefault">
+              <div class="skillbar"></div>
+            </div>
+          </div>
+        -->
+
+
+        </div>
+        <div onclick="goBack(this)" class="back">
+          Retour
+        </div>
+      </div>
+
+
+
+    </div>
+  </body>
+</html>
