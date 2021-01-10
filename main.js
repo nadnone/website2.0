@@ -64,8 +64,6 @@ function goBack(node){
 
 
 
-
-
 /* AGE EVENT */
 
 function show_ageInfo(){
@@ -243,7 +241,6 @@ function closeSkillShow(){
   
     text.setAttribute("x", centercanvas.x+(r*1.1* Math.cos(tmpRad)))
     text.setAttribute("y", centercanvas.y+(r*1.1* Math.sin(tmpRad)))
-    text.setAttribute("fill", "black")
     text.setAttribute("font-weight", "bold")
     
     text.innerText = skills[i].title
@@ -347,7 +344,6 @@ function getAge() {
 
 function preload(){
   
-  
 /* LAUNcHING FUNCTION */
 
   setTimeout(() => {
@@ -365,4 +361,4 @@ window.addEventListener("orientationchange", () => {
 });
 
 
-preload()
+window.onload = preload;
