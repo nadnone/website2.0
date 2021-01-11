@@ -9,12 +9,14 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
       
       <script src="config/skills.js"></script>
+      <script src="config/gallery.js"></script>
       <link rel="stylesheet" href="plugins/uikit/css/uikit.min.css">
       <script src="plugins/uikit/js/uikit.min.js"></script>
       <script src="plugins/uikit/js/uikit-icons.min.js"></script>
       <script src="js/main.js" charset="utf-8"></script>
       <script src="js/themes.js" defer charset="utf-8"></script>
       <script src="js/popup.js" defer charset="utf-8"></script>
+      <script src="js/gallery_func.js" defer charset="utf-8"></script>
 
       <title>Nadir Felder | Portfolio</title>
 
@@ -87,8 +89,8 @@
           <div onclick="goButton('Skills')" class="button">
             Skills
           </div>
-          <div onclick="goButton('Links')" class="button">
-            Liens
+          <div onclick="goButton('Gallery')" class="button">
+            Gallerie
           </div>
           <div onclick="goButton('Contact')" class="button">
             Contact
@@ -100,7 +102,10 @@
           Fait par Nadir Felder. Merci à Phoenix Rigo et Rafael Reyes pour l'image de fond. Merci à Thibault Blaser pour le logo
 
           <font class="link" onclick="goLink('https://www.ovh.com/fr/support/mentions-legales/');">Hebergement: OVH</font>
-      </div>
+
+          <br/>
+          Website v2
+        </div>
     </div>
 
     <div class="scroll_popup">
@@ -159,20 +164,20 @@
 
 
 
-      <div id="Links" class="popup">
+      <div id="Gallery" class="popup" onmouseover="closeSkillShow()">
         <div class="titre">
-          Liens
+          Gallerie
         </div>
-        <div class="categorie" onmouseover="closeSkillShow()">
-          <div onclick='goLink("https://github.com/spoutnik911")' class="cat">
-            GItHub
-          </div>
-          <div onclick='goLink("https://www.sololearn.com/Profile/4957650")' class="cat">
-            Sololearn
-          </div>
-          <div onclick='goLink("https://spoutnik911.github.io/DactyloLibre-CsharpVersion/")' class="cat">
-            DactyloLibre (Projet)
-          </div>
+        <div class="categorie" >
+
+          <!--div class="item">
+            <div class="img"></div>
+            <div class="title">Exemple</div>
+            <div class="desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum doloremque eaque dicta optio nihil consequatur earum, molestias cum unde facilis saepe laboriosam vero rerum facere odit labore cupiditate eveniet aspernatur!</div>
+          </div>-->
+          
+
+
         </div>
         <div onclick="goBack(this)" class="back">
           Retour
@@ -184,7 +189,7 @@
 
 
 
-      <div id="Contact" class="popup">
+      <div id="Contact" class="popup" onmouseover="closeSkillShow()">
           <div class="titre">
               Contact
           </div>
@@ -192,7 +197,7 @@
               Vous pouvez me contacter avec le bouton suivant
           </div>
           <div class="categorie">
-              <div ondblclick="this.innerText = 'E-mail'" onmouseover="this.innerText = 'nad@nadirFelder.xyz'" onclick='window.open("mailto:nad@nadirFelder.xyz")'  class="cat">
+              <div ondblclick="this.innerText = 'E-mail'" onmouseover="this.innerText = 'nad@nadirfelder.com'" onclick='window.open("mailto:nad@nadirfelder.com")'  class="cat">
                   E-mail
               </div>
           </div>

@@ -33,6 +33,7 @@ function goButton(where){
 
   if (where === "Skills") skillLoad();
   else if (where === "think") getAge();
+  else if (where === "Gallery") loagGallery();
 
   
 }
