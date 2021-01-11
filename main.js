@@ -333,9 +333,9 @@ function skillLoad(){
 /* GET AGE */
 
 function getAge() {
-  let age = Date.now() - new Date(1996, 6, 17).getTime();
-  age /= (365 * 3600 * 24 * 1000);
-  document.getElementById("mon_age").innerText = age.toFixed(0);
+  let age = (Date.now() - new Date(1996, 6, 17).getTime()) / 1000;
+  age /= (24 * 3600 * 365)
+  document.getElementById("mon_age").innerText = parseInt(age)
 }
 
 
