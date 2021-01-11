@@ -149,8 +149,8 @@ function closeSkillShow(){
 
   let canvas = document.createElement("svg")
 
-  canvas.setAttribute("width", "1000")
-  canvas.setAttribute("height", "1000")
+  canvas.setAttribute("width", window.screen.width/1.2)
+  canvas.setAttribute("height",  window.screen.height/1.2)
   canvas.setAttribute("id", "canvas")
 
   let centercanvas = {

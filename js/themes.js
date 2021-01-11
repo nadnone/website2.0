@@ -47,7 +47,7 @@ function theme_menu(){
 
                     break;
 
-                case "Orange":
+                case "Juice":
                     style.setProperty("--primary", "#fb8c005f"); 
                     style.setProperty("--secondary", "#ffeb3b"); 
 
@@ -60,7 +60,7 @@ function theme_menu(){
                     style.setProperty("--secondary_light", "#ffff7255"); 
                     style.setProperty("--secondary_dark", "#c8b900"); 
 
-                    title.innerText = "Theme Orange"
+                    title.innerText = "Theme Juice"
             }
 
             for (let i = 0; i < options.length; i++) {
