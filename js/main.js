@@ -11,6 +11,8 @@ let sectionOpened = false;
 
 function goButton(where){
   if (sectionOpened !== false) { document.getElementById(sectionOpened).parentNode.style.display = "none"; document.getElementById(sectionOpened).style.display = "none"; }
+ 
+  UIkit.scroll('').scrollTo(`.main`, {duration: 0});
 
   document.getElementById(where).style.display = "flex";
   document.getElementById(where).parentNode.style.display = "flex";
@@ -44,13 +46,13 @@ function goLink(link){
 
 function goBack(node){
 
-  UIkit.scroll('').scrollTo('#menubg');
+  UIkit.scroll('').scrollTo('#menubg', {duration: 1000});
 
   setTimeout(function(){
     node.parentNode.parentNode.style.display = "none";
     node.parentNode.style.display = "none";
     document.querySelector(".main .container").style.opacity = "1";
-  }, 500);
+  }, 1200);
 
 
 }

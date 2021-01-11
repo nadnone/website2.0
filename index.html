@@ -12,7 +12,7 @@
       <link rel="stylesheet" href="plugins/uikit/css/uikit.min.css">
       <script src="plugins/uikit/js/uikit.min.js"></script>
       <script src="plugins/uikit/js/uikit-icons.min.js"></script>
-      <script src="main.js" charset="utf-8"></script>
+      <script src="js/main.js" charset="utf-8"></script>
       <script src="js/themes.js" defer charset="utf-8"></script>
 
       <title>Nadir Felder | Portfolio</title>
@@ -49,6 +49,7 @@
 
                 <div class="select_theme_options">Moon</div>
                 <div class="select_theme_options">Sun</div>
+                <div class="select_theme_options">Orange</div>
               </div>
         
 
@@ -130,16 +131,18 @@
               Deux ans après, je reprend le chemin de la formation CFC à mes 21 ans, mais je la quitte en 2018. Cela dit, pendant tout ce temps depuis mes 16 ans, j’apprends à mes heures 
               perdues à programmer en tant qu’autodidacte. Je survole plusieurs langages et notions. Bien-sûr, j’ai encore beaucoup à apprendre aujourd’hui.</br>
               <br/>
-              En 2018, dans le cadre d’une formation en alternance, je participe à des projets et me forme de façon plus poussée à certains langages comme le JavaScript, PHP, un peu de C#,
-              des notions vagues de 3D comme le blocage de cadran, une introduction aux shaders d’openGL, les calculs matriciels carrés, de la 2D où j'y fais un jeu deux joueurs,
+
+              En 2018, dans le cadre d’une formation en alternance, je participe à des projets et me forme de façon plus poussée à certains langages comme le JavaScript, 
+              PHP, un peu de C#, des notions vagues de 3D comme le blocage de cadran, une introduction aux shaders d’openGL, de la 2D où j'y fais un jeu deux joueurs, 
               j’y ai gagné de meilleures connaissances en réseau, et ai vaguement approché la norme IPv6. J’ai aussi été mieux sensibilisé à l’indentation et l’ergonomie.
-              Après avoir quitté ma formation, j’ai continué à me former tout seul chez moi, dont certains projets sont publiés sur <a style="color:inherit;text-decoration: underline;" href="https://github.com/spoutnik911"> ma page GitHub</a>. J’ai aussi découvert
+              Après avoir quitté ma formation, j’ai continué à me former tout seul chez moi, dont certains projets sont publiés sur 
+              <a style="color:inherit;text-decoration: underline;" href="https://github.com/spoutnik911" target="_blank"> ma page GitHub</a>. J’ai aussi découvert 
               via les services de Discord, des outils comme Trello.</br>
               <table>
                 <tr><td class="li">2016</td><td>Commencement de mon apprentissage plus sérieux grâce au site de OpenClassrooms, anciennement Le site du zéro.</td></tr>
                 <tr><td class="li">2017</td><td>Révision, acquisition de mes connaissances et formation parallèle en alternance.</td></tr>
-                <tr><td class="li">Septembre 2020</td><td>Reprise de cours théoriques en ligne et révision de l'anglais.</td></tr>
-                <tr><td class="li">Décembre 2020</td><td>Recherche de stages dans le vaste domaine de l’informatique.</td></tr>
+                <tr><td class="li">2020</td><td>Reprise de cours théoriques en ligne et révision de l'anglais.<br>Recherche de stages dans le vaste domaine de l’informatique.</td></tr>
+                <tr><td class="li">2021</td><td>Commencement de l'apprentissage de Kotlin avec Android SDK<br/>Révision de mon site web</td></tr>
               </table>
               Aujourd’hui, je suis motivé à trouver des stages ou petits jobs à mi-temps pour me réintégrer dans la vie active, mais
               aussi dans le but de développer mes connaissances autodidactes. Je recherche aussi à reprendre le chemin des études.
@@ -159,7 +162,7 @@
         <div class="titre">
           Liens
         </div>
-        <div class="categorie">
+        <div class="categorie" onmouseover="closeSkillShow()">
           <div onclick='goLink("https://github.com/spoutnik911")' class="cat">
             GItHub
           </div>
@@ -204,11 +207,11 @@
 
 
 
-      <div id="Skills" class="popup">
+      <div id="Skills" class="popup" onmouseover="closeSkillShow()">
         <div class="titre">
           Compétences
         </div>
-        <div class="contenu" onmouseover="closeSkillShow()">
+        <div class="contenu" ">
         <!--   <div class="skillbox">
             <div class="title"></div>
             <div id="skillDefault">
