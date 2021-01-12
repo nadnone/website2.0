@@ -1,0 +1,10 @@
+{
+    "title": "Portfolio",
+    "version": "1.0",
+    "type": "rich",
+    "url": "https://nadirfelder.com",
+    "author_name": "Nadir Felder",
+    "width": 600,
+    "heigt": 300,
+    "html": "<img src='https://nadirfelder.com/res/logoNadUnkownSwissMann.png'/><br/><font size='15pt'>Enjoy !</span>"
+}
