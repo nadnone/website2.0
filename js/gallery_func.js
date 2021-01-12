@@ -2,8 +2,10 @@ function loagGallery(){
 
     let contenu = document.querySelector("#Gallery .categorie")
 
-
+    contenu.innerHTML = ""
+    
     for (let i = 0; i < gallery_items.length; i++) {
+
 
 
         let item = document.createElement("div")

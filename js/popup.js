@@ -14,7 +14,7 @@ function redirection(){
     });
 
     UIkit.notification({
-        message: "Une Gallerie ajoutée !",
+        message: "Une gallerie ajoutée !",
         status: 'warning',
         pos: 'top-left',
         timeout: 5000

@@ -253,45 +253,6 @@ text{
     fill: var(--text_on_secondary);
 }
 /*
-#Skills .contenu{
-    font-weight: normal;
-    font-size: 20pt;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
-}
-#Skills .contenu .button:hover{
-    color: rgb(185, 201, 219);
-    text-decoration: underline;
-    transition: background-color 0.5s;
-}
-#Skills .subtitle{
-    width: 60%;
-    text-align: center;
-}
-.skillbox{
-    height: 11pt;
-    width: 40%;
-    margin-top: 5%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-#skillDefault{
-    background-color: black;
-    height: 11pt;
-    width: 45%;
-    border: solid 5pt black;
-}
-.skillbar{
-    background-color: white;
-    height: 100%;
-}
-*/
-
-
-/*
  GALLERIE
 */
 
@@ -353,14 +314,36 @@ text{
 
 
 
-
-
-
 /* END GALLERIE */
 
 
 
+/*
+CONTACT
+*/
 
+
+#Contact .contenu {
+    display: flex;
+    flex-direction: column;
+}
+#Contact .contenu .picture_circle{
+    margin: 25pt 0;
+    background-image: url("res/moi_2_alpha.png");
+    background-size: cover;
+    background-position: center;
+    background-color: var(--secondary_dark);
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    border: var(--primary_dark) solid 10pt;
+
+}
+
+
+
+
+/* END CONTACT*/
 
 
 
@@ -460,7 +443,7 @@ text{
     list-style-type: circle;
     font-weight: bold;
     font-size: 18pt;
-    padding-right: 2.5vw;
+    padding-right: 2.5%;
 }
 #think td {
     width: max-content;
@@ -470,6 +453,8 @@ text{
 #think table {
     margin: 20pt 0 20pt 20pt;;
 }
+
+
 /* ***************** */
 
 
@@ -499,6 +484,8 @@ text{
 
 /* RESPONSIVE *********************** */
 @media only screen and (min-width: 1201px) {
+
+
     body {
         background-image: url("res/background_low.jpg");
     }
@@ -516,7 +503,6 @@ text{
         flex-direction: row;
     }
     .scroll_popup .popup .categorie .cat {
-        width: 500px;
         height: auto;
     }
     .scroll_popup .popup .back {

@@ -3,7 +3,7 @@ const gallery_items = [
 
     {
         "title": "DactyloLibre 2020",
-        "desc": "Ce petit logiciel vous aidera à former vos compétences de frappe gratuitement Ceci est un remake de mon logiciel original en Javascript",
+        "desc": "Ce petit logiciel vous aidera à former vos compétences de dactylographie gratuitement. Ceci est un remake de mon logiciel original en Javascript",
         "link": "https://github.com/spoutnik911/DactyloLibre-CsharpVersion",
         "image": "https://github.com/spoutnik911/DactyloLibre-CsharpVersion/raw/master/demo/demo.gif"
     },
