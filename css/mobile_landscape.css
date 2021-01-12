@@ -1,0 +1,203 @@
+
+
+
+
+
+@media only screen and (min-width: 320px) and (max-width: 1200px) and (orientation: landscape) {
+    body {
+      background-position: 70%;
+    }
+    .main {
+        width: 100%;
+        display: flex;
+        flex-direction: row-reverse;
+           
+    }
+    .main .container {
+        display: flex;
+        width: 50%;
+        flex-direction: row;
+        height: 75%;
+        flex-wrap: wrap;
+    }
+
+    .main .container .button{
+        width: 46%;
+        font-size: 15pt;
+        background-color: var(--primary_light);
+        margin: 0 2%;
+    }
+    .main .container .button:active{
+        background-color: var(--primary)
+    }
+    .bubble{
+        width: 46%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .arrow {
+      height: 50%;
+      width: 50%;
+      margin-bottom: 0;
+    }
+
+
+
+
+
+
+    .scroll_popup .popup{
+        width: 100vw;
+        align-items: center;
+    }
+    .scroll_popup .popup .categorie {
+        flex-direction: column;
+    }
+    #think {
+        margin-top: 2%;
+        width: 90%;
+    }
+    #think .back {
+        margin-left: -30px;
+        width: 100%;
+    }
+
+    #box_info{
+        display: none;
+    }
+
+  
+    #Skills{
+        height: auto;
+        width: 100%;
+    }
+    #Skills .subtitle{
+    width: 100%;
+    text-align: left;
+    }
+    #Skills .contenu{
+        display: flex;
+        font-size: 20pt;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .skillbox{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 40%;
+        margin: 5% 5%;
+    }
+    #skillDefault{
+        margin-top: 5%;
+        background-color: var(--primary);
+        height: 11pt;
+        width: 100%;
+        border: solid 5pt var(--primary_dark);
+    }
+    .skillbar{
+        background-color: var(--text_on_primary);
+        height: 100%;
+    }
+    
+    pre{
+        display: none;
+    }
+    
+
+
+    #Gallery {
+        width: 100%;
+    }
+    
+    #Gallery .categorie{
+        margin-top: 20pt;
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+    
+    #Gallery .item {
+        margin: 0 10pt;
+        margin-bottom: 5%;
+        width: 45%;
+        display: flex;
+        align-items: center;
+        padding-top: 10pt;
+        flex-direction: column;
+        border-radius: 5px;
+        background-color: var(--primary);
+        
+    }
+    #Gallery .item > div {
+        transition: background-color .5s;
+    }
+    #Gallery .item:hover > div {
+        background-color: var(--secondary_light);
+        transition: background-color .5s;
+    }
+    #Gallery .item .img {
+        background-size: cover;
+        width: 100%;
+        height: 300px;
+    }
+    #Gallery .item .title {
+        font-size: 18pt;
+        width: 100%;
+        height: 10%;
+        margin-top: 5pt;
+        padding: 5pt;
+        background-color: var(--secondary);
+    }
+    #Gallery .item .desc {
+        background-color: var(--secondary);
+        font-size: 11pt;
+        width: 100%;
+        padding: 0 5pt;
+        height: 150px;
+        height: 100%;
+        overflow-y: inherit;
+        
+    }
+
+
+
+
+
+
+    #Contact {
+        height: 100%;
+    }
+
+    #Contact .contenu {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    #contact .contenu > div {
+        width: auto;
+    }
+    #Contact .contenu .subbox{
+        margin: 0 10pt;
+        text-align: left;
+    }
+    #Contact .picture_circle {
+        width: 250px;
+        height: 250px;
+        margin: 0 10pt;
+    }
+    #Contact .categorie{
+        align-items: flex-start;
+    }
+
+
+
+
+}
+
+
+
+/* ******************************* */

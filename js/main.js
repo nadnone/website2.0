@@ -325,7 +325,7 @@ function skillsort(){
 function skillLoad(){
 
 
-  if(window.screen.width < 1200) {
+  if(window.innerWidth < 1200) {
     skillsort()
   }
   else{  

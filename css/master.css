@@ -1,0 +1,441 @@
+html, :root{
+    background: none;
+}
+div{
+    color: var(--text_on_primary);
+}
+.uk-notification-message{
+    background-color: var(--primary) !important;
+    color: var(--text_on_primary);
+}
+body, html {
+    font-family: 'Open Sans', sans-serif;
+    height: max-content;
+    margin: 0;
+    padding: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: bottom;
+    background-size: cover;
+    color: var(--primary);
+    height: var(--full_screen);
+}
+
+/*THEMES*/
+.themes{
+    display: flex;
+    position: fixed;
+    align-items: flex-start;
+    justify-content: flex-end;
+    height: 0;
+    width: 100%;
+    user-select: none;
+    z-index: 100;
+
+}
+.themes .box_theme{
+    padding: 10pt;
+    margin: 10pt;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--primary);
+
+}
+.themes .box_theme:hover{
+    background-color: var(--secondary);
+}
+.themes #select_theme_selector{
+    background-color: var(--primary_light);
+    visibility: hidden;
+    height: 25pt;
+    width: 90pt;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.themes .select_theme_options{
+    visibility: hidden;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: var(--primary_light);
+}
+.themes .conteneur{
+    height: 30pt;
+    width: 100%;
+    background-color: var(--primary);
+}
+.themes .select_theme_options:hover{
+    background-color: var(--secondary_light);
+}
+
+
+#box_info{
+    position: fixed;
+    background-color: var(--primary_dark);
+    backdrop-filter: blur(6px);
+    width: 400px;
+    height: 150px;
+    top: 0;
+    left: 0;
+    color: var(--text_on_primary);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 1s;
+    overflow: auto;
+    padding-left: 1%;
+    z-index: 100;
+}
+#box_info table{
+    width: 100%;
+    text-align: left;
+}
+#box_info table td{
+    font-weight: lighter;
+    width: 50%;
+}
+.fixed_notif_box
+{
+    position: fixed;
+    width: 100%;
+}
+
+.bg {
+    height: var(--full_screen);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+}
+.button, .back{
+    user-select: none;
+}
+.menubg {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  flex-direction: column;
+  background-color: var(--secondary_light);
+}
+.main {
+  margin-top: 15px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 75%;
+}
+.main .container{
+    opacity: 0;
+    transition: opacity .5s;
+}
+.bg .super_container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+}
+.menubg .logo {
+    background-image: url("../res/logo_nf.png");
+    background-size: cover;
+    width: 120px;
+    height: 120px;
+}
+.bg .super_container .arrow:hover{
+    opacity: 1;
+    transition: opacity 0.5s;
+}
+.bg .container {
+    width: 100vw;
+    display: flex;
+    align-self: flex-end;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    background-color: var(--secondary_light);
+    margin: 0;
+}
+.bg .container .titre {
+    font-size: 64px;
+    color:  var(--text_on_primary);
+    text-align: center;
+
+}
+.bg .container .sous_titre {
+    font-size: 26px;
+    color: var(--text_on_primary);
+    text-align: center;
+    margin-bottom: 25px;
+    font-style: italic;
+}
+.link{
+    text-decoration: underline;
+    cursor: pointer;
+}
+/* LISTE */
+ul li {
+    list-style-type: circle;
+    margin-top: 10pt;
+}
+/* ************ */
+/* MENU */
+.main .button {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    width: auto;
+    font-size: 24px;
+    color: var(--text_on_primary);
+    transition: background-color 0.5s;
+}
+.main .button:hover {
+    background-color: var(--secondary_dark) !important;
+    transition: background-color 0.5s;
+}
+/* *********** */
+
+.footer {
+    display: flex;
+    font-weight: lighter;
+    align-self: center;
+    justify-content: center;
+    color:  var(--text_on_secondary);
+    text-align: center;
+    flex-direction: column;
+    height: 15%;
+}
+.footer a:visited{
+    color: inherit;
+}
+
+
+#Skills{
+    height: auto;
+    width: auto;
+}
+
+.skill_pourcent{
+    fill: var(--primary_dark);
+    z-index: 1;
+}
+
+.skillHover:hover{
+    fill: var(--primary_light);
+    z-index: 10;
+}
+.skillHover{
+    fill: var(--secondary_light);
+}
+text{
+    fill: var(--text_on_secondary);
+}
+/*
+ GALLERIE
+*/
+
+#Gallery {
+    height: max-content;
+    width: 85%;
+}
+
+#Gallery .categorie{
+    margin-top: 20pt;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+#Gallery .item {
+    margin: 0 10pt;
+    height: 25%;
+    width: 25%;
+    display: flex;
+    align-items: center;
+    padding-top: 10pt;
+    flex-direction: column;
+    border-radius: 5px;
+    background-color: var(--primary);
+    
+}
+#Gallery .item > div {
+    transition: background-color .5s;
+}
+#Gallery .item:hover > div {
+    background-color: var(--secondary_light);
+    transition: background-color .5s;
+}
+#Gallery .item .img {
+    background-size: cover;
+    width: 95%;
+    height: 65%;
+}
+#Gallery .item .title {
+    font-size: 18pt;
+    width: 100%;
+    height: 10%;
+    margin-top: 5pt;
+    padding: 5pt;
+    background-color: var(--secondary);
+}
+#Gallery .item .desc {
+    background-color: var(--secondary);
+    font-size: 11pt;
+    width: 100%;
+    padding: 0 5pt;
+    height: 40%;
+    
+}
+
+
+
+/* END GALLERIE */
+
+
+
+/*
+CONTACT
+*/
+
+
+#Contact .contenu {
+    display: flex;
+    flex-direction: column;
+}
+#Contact .picture_circle{
+    margin: 25pt 0;
+    background-image: url("../res/moi_2_alpha.png");
+    background-size: cover;
+    background-position: center;
+    background-color: var(--secondary_dark);
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    border: var(--primary_dark) solid 10pt;
+
+}
+
+
+
+
+/* END CONTACT*/
+
+
+
+
+
+
+/* PANEL */
+
+.scroll_popup {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    background-color: var(--secondary_light);
+    backdrop-filter: blur(12px);
+    z-index: 1;
+}
+
+.scroll_popup .popup {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.scroll_popup .popup .titre {
+    margin-top: 15px;
+    width: 100%;
+    display: flex;
+    font-size: 32px;
+    font-weight: normal;
+    justify-content: center;
+}
+
+.scroll_popup .popup .contenu {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-weight: lighter;
+}
+.scroll_popup .popup .categorie {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.scroll_popup .popup .categorie .cat {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+    font-size: 22px;
+    transition: color 0.5s;
+    user-select: none;
+}
+.scroll_popup .popup .categorie .cat:hover {
+    text-decoration: underline;
+    color: var(--text_on_primary);
+    transition: color 0.5s;
+}
+.scroll_popup .popup .back {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    margin: 15px;
+    align-items: center;
+    text-align: center;
+    font-size: 22pt;
+    color: var(--text_on_primary);
+    transition: transform 0.5s;
+}
+.scroll_popup .popup .back:hover {
+    transform: scale(1.5,1.5);
+    transition: transform 0.5s;
+}
+
+
+/* ******************** */
+
+/* THINKING PANEL */
+
+#think {
+    justify-content: center;
+    font-size: 20px;
+    height: max-content;
+}
+#think .contenu{
+    justify-content: left;
+    font-weight: normal;
+    min-height: max-content;
+    font-weight: 450;
+}
+#think .li{
+    display: list-item;
+    list-style-type: circle;
+    font-weight: bold;
+    font-size: 18pt;
+    padding-right: 2.5%;
+}
+#think td {
+    width: max-content;
+    vertical-align: top;
+    padding-top: 10pt;
+}
+#think table {
+    margin: 20pt 0 20pt 20pt;;
+}
+
+
+/* ***************** */

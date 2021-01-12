@@ -2,7 +2,13 @@
 <html lang="fr" dir="ltr">
     <head>
       <meta charset="utf-8">
-      <link rel="stylesheet" href="master.css">
+      
+      <link rel="stylesheet" href="css/master.css">
+      <link rel="stylesheet" href="css/default_main.css">
+      <link rel="stylesheet" href="css/mobile_landscape.css">
+      <link rel="stylesheet" href="css/mobile_portrait.css">
+      <link rel="stylesheet" href="css/big_screen.css">
+
       <link rel="shortcut icon" href="res/logo_nf.png">
 
       
@@ -10,13 +16,16 @@
       
       <script src="config/skills.js"></script>
       <script src="config/gallery.js"></script>
+
       <link rel="stylesheet" href="plugins/uikit/css/uikit.min.css">
       <script src="plugins/uikit/js/uikit.min.js"></script>
       <script src="plugins/uikit/js/uikit-icons.min.js"></script>
+
       <script src="js/main.js" charset="utf-8"></script>
       <script src="js/themes.js" defer charset="utf-8"></script>
       <script src="js/popup.js" defer charset="utf-8"></script>
       <script src="js/gallery_func.js" defer charset="utf-8"></script>
+      <script src="js/window_resize_mobile.js" charset="utf-8"></script>
 
       <title>Nadir Felder | Portfolio</title>
 
@@ -38,9 +47,7 @@
 
 
     
-        <div id="box_info">
-          xxx
-        </div>
+        <div id="box_info"></div>
 
 
         <div class="themes">
@@ -53,7 +60,7 @@
               <div class="conteneur">
 
                 <div class="select_theme_options">Moon</div>
-                <div class="select_theme_options">Sun</div>
+                <div class="select_theme_options">Glass</div>
                 <div class="select_theme_options">Juice</div>
               </div>
         
@@ -212,14 +219,17 @@
           </div>
           <div class="contenu">
             <div class="picture_circle"></div>
-
-              Vous pouvez me contacter avec le bouton suivant
+            <div class="subbox">
+              <div>Vous pouvez me contacter avec le bouton suivant</div>
+              <div class="categorie">
+                <div ondblclick="this.innerText = 'E-mail'" onmouseover="this.innerText = 'nad@nadirfelder.com'" onclick='window.open("mailto:nad@nadirfelder.com")'  class="cat">
+                    E-mail
+                </div>
+            </div>
+            </div>
+            
           </div>
-          <div class="categorie">
-              <div ondblclick="this.innerText = 'E-mail'" onmouseover="this.innerText = 'nad@nadirfelder.com'" onclick='window.open("mailto:nad@nadirfelder.com")'  class="cat">
-                  E-mail
-              </div>
-          </div>
+         
           <div onclick="goBack(this)" class="back">
               Retour
           </div>

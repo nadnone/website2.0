@@ -21,7 +21,7 @@ const gallery_items = [
     },
     {
         "title": "De 2016 à aujourd'hui",
-        "desc": "J'ai pu expérimenter pleins de choses, mais je choisi de ne pas toutes les montrer. Cependant vous pouvez suivre mon aventure sur Github en cliquant sur cette vignette",
+        "desc": "J'ai pu expérimenter pleins de choses, mais je choisi de ne pas toutes les montrer. Cependant vous pouvez suivre mon aventure sur GitHub en cliquant sur cette vignette",
         "link": "https://github.com/spoutnik911",
         "image": "res/logoNadUnkownSwissMann.png"
     }

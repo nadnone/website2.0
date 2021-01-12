@@ -1,0 +1,180 @@
+@media only screen and (min-width: 320px) and (max-width: 1200px) and (orientation: portrait) {
+    body {
+        height: var(--full_screen);
+        background-position: 70%;
+    }
+    .main {
+     height: max-content;
+    }
+    .main .container {
+        height: 75%;
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 15px;
+    }
+    .main .container .button{
+        width: 100%;
+        height: 100px;
+        background-color: var(--primary_light);
+    }
+    .main .container .button:active{
+        background-color: var(--primary);
+    }
+    .arrow {
+      height: 20%;
+      width: 20vw;
+      margin-bottom: 0;
+    }
+    .scroll_popup {
+        height: max-content;
+    }
+    .scroll_popup .popup{
+        width: 100%;
+        align-items: center;
+    }
+    .scroll_popup .popup .categorie {
+        flex-direction: column;
+    }
+    .scroll_popup .popup .categorie .cat {
+        width: 100%;
+        height: 10%;
+    }
+    .scroll_popup .popup .back {
+        width: 90vw;
+        height: 20%;
+    }
+    #think {
+        margin-top: 2%;
+        width: 90%;
+    }
+    #think .back {
+        margin-left: -30px;
+        width: 100%;
+    }
+    #think tr{
+        display: inline-block;
+    }
+    #think .li{
+        margin-bottom: 2.5pt;
+    }
+
+
+    #box_info{
+        display: none;
+    }
+
+
+    
+    #Skills{
+        height: auto;
+    }
+    #Skills .subtitle{
+    width: 100%;
+    text-align: left;
+    }
+    #Skills .contenu{
+        display: flex;
+        font-size: 20pt;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .skillbox{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 90%;
+        margin: 5% 0;
+    }
+    #skillDefault{
+        margin-top: 5%;
+        background-color: var(--primary);
+        height: 11pt;
+        width: 100%;
+        border: solid 5pt var(--primary_dark);
+    }
+    .skillbar{
+        background-color: var(--text_on_primary);
+        height: 100%;
+    }
+    
+    pre{
+        display: none;
+    }
+
+
+
+
+
+
+    #Gallery {
+        width: 95%;
+        height: max-content;
+    }    
+    #Gallery .categorie{
+        margin-top: 20pt;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+    
+    #Gallery .item {
+        margin: 0 10pt;
+        margin-bottom: 5%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        padding-top: 10pt;
+        flex-direction: column;
+        border-radius: 5px;
+        background-color: var(--primary);
+        
+    }
+    #Gallery .item > div {
+        transition: background-color .5s;
+    }
+    #Gallery .item:hover > div {
+        background-color: var(--secondary_light);
+        transition: background-color .5s;
+    }
+    #Gallery .item .img {
+        background-size: cover;
+        width: 100%;
+        height: 300px;
+    }
+    #Gallery .item .title {
+        font-size: 18pt;
+        width: 100%;
+        height: 10%;
+        margin-top: 5pt;
+        padding: 5pt;
+        background-color: var(--secondary);
+    }
+    #Gallery .item .desc {
+        background-color: var(--secondary);
+        font-size: 11pt;
+        width: 100%;
+        padding: 0 5pt;
+        height: 150px;
+        overflow-y: inherit;
+        
+    }
+
+
+    #Contact {
+        height: var(--full_screen);
+    }
+
+    #Contact .contenu{
+        text-align: center;
+    }
+
+}
+
+
+
+

@@ -29,7 +29,7 @@ function theme_menu(){
 
                     break;
 
-                case "Sun":
+                case "Glass":
 
                     style.setProperty("--primary", "#FFFAFA5f"); 
                     style.setProperty("--secondary", "#cccccc"); 
@@ -43,7 +43,7 @@ function theme_menu(){
                     style.setProperty("--secondary_light", "#c4c4bc5f"); 
                     style.setProperty("--secondary_dark", "#70707055"); 
 
-                    title.innerText = "Theme Sun"
+                    title.innerText = "Theme Glass"
 
                     break;
 

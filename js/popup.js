@@ -5,20 +5,6 @@ function redirection(){
         pos: 'top-left',
         timeout: 10000
     });
-
-    UIkit.notification({
-        message: "Un joli graphique de compétences sur desktop ! :O",
-        status: 'warning',
-        pos: 'top-left',
-        timeout: 5000
-    });
-
-    UIkit.notification({
-        message: "Une gallerie ajoutée !",
-        status: 'warning',
-        pos: 'top-left',
-        timeout: 5000
-    });
 }
 
 

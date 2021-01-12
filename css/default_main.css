@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+:root{
+    --primary:#0718665f;
+    --secondary:#093475;
+
+    --text_on_primary: #e0f7fa;
+    --text_on_secondary: #e8eaf6;
+
+    --primary_light: #0718665f;
+    --primary_dark: #071866;
+
+
+    --secondary_light: #4e5b7055;
+    --secondary_dark: #093475;
+
+    --full_screen: 100%;
+}
+
+body{
+    background-image: url("../res/background_low.jpg");
+}
