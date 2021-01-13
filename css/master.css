@@ -48,7 +48,7 @@ body, html {
 .themes #select_theme_selector{
     background-color: var(--primary_light);
     visibility: hidden;
-    height: 25pt;
+    height: 0;
     width: 90pt;
     display: flex;
     align-items: center;
@@ -143,9 +143,10 @@ body, html {
 }
 .menubg .logo {
     background-image: url("../res/logo_nf.png");
-    background-size: cover;
-    width: 120px;
-    height: 120px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 240px;
+    height: 240px;
 }
 .bg .super_container .arrow:hover{
     opacity: 1;
@@ -215,9 +216,11 @@ ul li {
 }
 
 
+
+
 #Skills{
-    height: auto;
-    width: auto;
+    height: max-content;
+    width: max-content;
 }
 
 .skill_pourcent{
@@ -235,6 +238,11 @@ ul li {
 text{
     fill: var(--text_on_secondary);
 }
+
+
+
+
+
 /*
  GALLERIE
 */

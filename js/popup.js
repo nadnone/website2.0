@@ -3,7 +3,7 @@ function redirection(){
         message: "Nouveau nom de domaine ! :)",
         status: 'warning',
         pos: 'top-left',
-        timeout: 10000
+        timeout: 5000
     });
 }
 
