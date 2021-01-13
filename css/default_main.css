@@ -19,3 +19,8 @@
 body{
     background-image: url("../res/background_low.jpg");
 }
+
+.scroll_popup{
+    background-color: var(--primary);
+    backdrop-filter: blur(60px);
+}

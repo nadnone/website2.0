@@ -3,13 +3,15 @@
     <head>
       <meta charset="utf-8">
       
-      <link rel="stylesheet" href="css/master.css">
-      <link rel="stylesheet" href="css/default_main.css">
-      <link rel="stylesheet" href="css/mobile_landscape.css">
-      <link rel="stylesheet" href="css/mobile_portrait.css">
-      <link rel="stylesheet" href="css/big_screen.css">
+      <link rel="stylesheet" href="css/master.css"/>
+      <link rel="stylesheet" href="css/default_main.css"/>
+      <link rel="stylesheet" href="css/mobile_landscape.css"/>
+      <link rel="stylesheet" href="css/mobile_portrait.css"/>
+      <link rel="stylesheet" href="css/big_screen.css"/>
 
-      <link rel="shortcut icon" href="res/logo_nf.png">
+      <link rel="stylesheet" href="css/svgmenu.css"/>
+
+      <link rel="shortcut icon" href="res/logo_nf.png"/>
 
       
       <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
@@ -60,7 +62,7 @@
 
   </head>
 
-  <body onmouseover='closeSkillShow()'>
+  <body>
 
 
 
@@ -107,14 +109,19 @@
 
 
 
-    <div id="menubg" class="menubg">
+    <div id="menubg" class="menubg" onmouseover='closeSkillShow()'>
       <div id="main" class="main">
-          <div class="bubble">
-              <div onclick=""class="logo"></div>
+      
+          
+          <div id="triangleMenu">
+              <div class="bubble">
+                <div onclick=""class="logo"></div>
+            </div>
           </div>
+
         <div class="container">
           
-          <div onclick="goButton('think')" class="button">
+          <div onclick="goButton('think')" class="button left_menu_btn">
             À propos
           </div>
           <div onclick="goButton('Skills')" class="button">
@@ -123,11 +130,11 @@
           <div onclick="goButton('Gallery')" class="button">
             Gallerie
           </div>
-          <div onclick="goButton('Contact')" class="button">
+          <div onclick="goButton('Contact')" class="button right_menu_btn">
             Contact
           </div>
-
-          </div>
+        
+        </div>
       </div>
       <div class="footer">
           Fait par Nadir Felder. Merci à Phoenix Rigo et Rafael Reyes pour l'image de fond. Merci à Thibault Blaser pour le logo

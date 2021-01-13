@@ -19,7 +19,7 @@ function theme_menu(){
                     style.setProperty("--text_on_primary", "#e0f7fa"); 
                     style.setProperty("--text_on_secondary", "#e8eaf6"); 
 
-                    style.setProperty("--primary_light", "#071866"); 
+                    style.setProperty("--primary_light", "#0718665f"); 
                     style.setProperty("--primary_dark", "#071866"); 
 
                     style.setProperty("--secondary_light", "#4e5b7055"); 
@@ -31,8 +31,8 @@ function theme_menu(){
 
                 case "Glass":
 
-                    style.setProperty("--primary", "#FFFAFA5f"); 
-                    style.setProperty("--secondary", "#cccccc"); 
+                    style.setProperty("--primary", "#5555555f"); 
+                    style.setProperty("--secondary", "#ababab"); 
 
                     style.setProperty("--text_on_primary", "#e0f7fa"); 
                     style.setProperty("--text_on_secondary", "#e8eaf6"); 
