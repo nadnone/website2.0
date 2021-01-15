@@ -2,18 +2,18 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Mouvement eliptique soleil-terre</title>
+    <title>Mouvement eliptique</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
-  <body style="background-color: black; height: 100%; width: 100%; margin: 0; padding: 0;">
+  <body style="background-color: black; height: 100%; width: 100%; margin: 0; padding: 0; overflow: hidden;">
 
 
-      <div id="infobox" style="float: right; margin: 50pt; color: white;"></div>
 
       <div id="star" style="height: 120px; width: 120px; border-radius: 50%; background-color: #3275ef; position: absolute;"></div>
 
       <div id="sat" style="height: 200px; width: 50px; background-image: url('satelite.png'); background-size: 100%; background-repeat: no-repeat; position: absolute;"></div>
 
+      <div id="infobox" style="float: right; margin: 50pt; margin-left: 0; color: white; position: absolute;"></div>
 
 
       <script type="text/javascript">
@@ -109,19 +109,19 @@
           sat.style.setProperty("top", `${parseFloat(star.style.top) + y*PIXEL}px`)
           
           document.getElementById("infobox").innerText = `
-          Bienvenue sur mon tableau de bord, voici mon satéllite imaginaire.
+          Bienvenue sur mon tableau de bord, voici mon satellite imaginaire.
 
 
           Vitesse de la périphélie: ${v_periphelie.toFixed(3)} m/s
-          Distance de la périphélie par rapport à la planète: ${(d_periphelie / 1000).toFixed(3)} km
+          Distance de la périphélie: ${(d_periphelie / 1000).toFixed(3)} * 10^3 km
           
           Vitesse de l'aphélie: ${v_aphelie.toFixed(3)} m/s
-          Distance de l'aphélie par rapport à la planête: ${(d_aphelie / 1000).toFixed(3)} km
+          Distance de l'aphélie: ${(d_aphelie / 1000).toFixed(3)} * 10^3 km
 
 
-          Coordonnées du satéllite: (${x.toFixed(3)},${y.toFixed(3)}) en mètre 
-          Vitesse angulaire du satéllite: ${(mouvement_moyen * 3600).toFixed(3)} km/h
-          Masse du satéllite: ${SAT_MASSE}kg
+          Coordonnées du satellite: (${x.toFixed(3)},${y.toFixed(3)}) en mètre 
+          Vitesse angulaire du satellite: ${(mouvement_moyen * 3600).toFixed(3)} km/h
+          Masse du satellite: ${SAT_MASSE}kg
           
           Excentricité: ${e.toFixed(5)}
           

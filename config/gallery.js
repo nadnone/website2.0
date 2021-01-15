@@ -20,6 +20,12 @@ const gallery_items = [
         "image": "res/screenshot_socketchatpy.jpg"
     },
     {
+        "title": "Mon satellite imaginaire 2021",
+        "desc": "J'ai repris un vieux projet qui prenait la poussière, calculer l'orbite d'un satellite avec les lois de Kepler ! après des heures de recherches, j'ai réussi à calculer la position d'un satellite imaginaire et l'afficher à l'écran",
+        "link": "https://nadirfelder.com/monSatellite/",
+        "image": "res/satelliteProjet.png"
+    },
+    {
         "title": "De 2016 à aujourd'hui",
         "desc": "J'ai pu expérimenter pleins de choses, mais je choisi de ne pas toutes les montrer. Cependant vous pouvez suivre mon aventure sur GitHub en cliquant sur cette vignette",
         "link": "https://github.com/spoutnik911",
