@@ -10,7 +10,7 @@
     }
     #main .container .right_menu_btn {
         -webkit-mask-image: url("/res/btnright.svg");
-        mask-image: url("/res/btnleft.svg");
+        mask-image: url("/res/btnright.svg");
         mask-size: cover;
         mask-repeat: no-repeat;
         -webkit-mask-size: cover;
