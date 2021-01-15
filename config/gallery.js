@@ -23,7 +23,7 @@ const gallery_items = [
         "title": "Mon satellite imaginaire 2021",
         "desc": "J'ai repris un vieux projet qui prenait la poussière, calculer l'orbite d'un satellite avec les lois de Kepler ! après des heures de recherches, j'ai réussi à calculer la position d'un satellite imaginaire et l'afficher à l'écran",
         "link": "https://nadirfelder.com/monSatellite/",
-        "image": "res/satelliteProjet.png"
+        "image": "res/satelliteProjet.gif"
     },
     {
         "title": "De 2016 à aujourd'hui",
