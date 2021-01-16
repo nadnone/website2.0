@@ -121,7 +121,7 @@ function satellite(){
         Bienvenue sur mon tableau de bord, voici mon satellite imaginaire.
 
     
-        Coordonnées du satellite: (${x.toFixed(3)}m,${y.toFixed(3)}m)
+        Coordonnées du satellite: (${x.toFixed(3)}m,${y.toFixed(3)*-1}m)
         Vitesse angulaire du satellite: ~${(mouvement_moyen * 3600).toFixed(3)} km/h
         Masse du satellite: ${SAT_MASSE}kg
         
