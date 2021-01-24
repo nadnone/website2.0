@@ -11,7 +11,7 @@ const gallery_items = [
         "title": "chat-server 2018",
         "desc": "Ce projet est une archive d'un petit chat que j'avais crée en 2018",
         "link": "https://github.com/spoutnik911/chat_server",
-        "image": "https://drive.google.com/uc?export=download&id=1SyJuTW7YeANQGmqGVhyKeT-bCkbguT-a"
+        "image": "res/demo-ChatIntern.gif"
     },
     {
         "title": "chat-server 2016",
@@ -24,6 +24,12 @@ const gallery_items = [
         "desc": "J'ai repris un vieux projet qui prenait la poussière, calculer l'orbite d'un satellite avec les lois de Kepler ! après des heures de recherches, j'ai réussi à calculer la position d'un satellite imaginaire et l'afficher à l'écran",
         "link": "https://nadirfelder.com/monSatellite/",
         "image": "res/satelliteProjet.gif"
+    },
+    {
+        "title": "Panneau d'affichage 2021",
+        "desc": "Affichage numérique sur page web pour échanger des informations entre particuliers",
+        "link": "https://github.com/spoutnik911/affichage_numerique_web",
+        "image": "https://github.com/spoutnik911/affichage_numerique_web/raw/main/demo/demo2.png"
     },
     {
         "title": "De 2016 à aujourd'hui",
