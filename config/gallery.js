@@ -29,7 +29,7 @@ const gallery_items = [
         "title": "Panneau d'affichage 2021",
         "desc": "Affichage numérique sur page web pour échanger des informations entre particuliers",
         "link": "https://github.com/spoutnik911/affichage_numerique_web",
-        "image": "https://github.com/spoutnik911/affichage_numerique_web/raw/main/demo/demo2.png"
+        "image": "res/demoWebapp.jpg"
     },
     {
         "title": "De 2016 à aujourd'hui",

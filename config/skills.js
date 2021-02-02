@@ -21,7 +21,7 @@ let skills =
         "pourcent": 50,
         "certif": "https://www.sololearn.com/Certificate/1023-4957650/pdf/",
         "desc": [
-            ["Site web personnel conçu avec", "Cours en ligne suivis"], //plus
+            ["Cours en ligne suivis"], //plus
         ]
     },
     {
@@ -33,11 +33,19 @@ let skills =
         ]
     },
     {
+        "title": "Python",
+        "pourcent": 40,
+        "certif": false,
+        "desc": [
+            ["Initiation à la programmation avec la version 2.7", "Création de connexion en sockets TCP/IP en python 2.7", "Apprentissage de python 3"], //plus
+        ]
+    },
+    {
         "title": "Bash",
         "pourcent": 35,
         "certif": false,
         "desc": [
-            ["Navigation dans les fichiers", "Scripts simples"], //plus
+            ["Automatisation de tâches sous Linux"], //plus
         ]
     },
     {
@@ -45,7 +53,7 @@ let skills =
         "pourcent": 40,
         "certif": "https://www.sololearn.com/Certificate/1080-4957650/pdf/",
         "desc": [
-            ["Création et importation de classes simples", "Projet DactyloLibre fait avec ce langage", "Essai de programmation 3D", "Intêret et cours en ligne suivis pour ce langage"], //plus
+            ["Essai de programmation 3D"], //plus
         ]
     },
     {
@@ -53,15 +61,15 @@ let skills =
         "pourcent": 25,
         "certif": false,
         "desc": [
-            ["En cours d'étude"], //plus
+            ["En cours d'étude", "Applications mobile Android sans utilisation directe des composants de l'appareil"], //plus
         ]
     },
     {
-        "title": "Réseaux TCP/IP",
+        "title": "Réseau",
         "pourcent": 40,
         "certif": "certificates/Certificat%20OCR%20-%20Apprenez%20le%20fonctionnement%20des%20r%C3%A9seaux%20TCPIP.pdf",
         "desc": [
-            ["Cours suivis en ligne", "Pratiqué pour des projets personnels"], //plus
+            ["Programation de serveurs TCP/IP et Websocket"], //plus
         ]
     },
     {
@@ -76,23 +84,23 @@ let skills =
         "pourcent": 30,
         "certif": "https://www.sololearn.com/Certificate/1051-4957650/pdf/",
         "desc": [
-            ["En cours d'étude"], //plus
+            ["En cours d'étude", "Connaissances de bases"], //plus
         ]
     },
     {
-        "title": "Linux",
-        "pourcent": 45,
+        "title": "GNU/Linux",
+        "pourcent": 55,
         "certif": false,
         "desc": [
-            ["Navigation dans le terminal", "Modifications rapides avec nano", "J'ai utilisé Ubuntu/Debian comme OS pendant 2-3 ans", "J'ai crée et géré de petits serveurs personnels avec Ubuntu et Raspbian"], //plus
+            ["Navigation dans le terminal", "Modifications rapides avec nano", "utilisé depuis 2016", "Crée et géré de petits serveurs personnels avec Ubuntu/Debian/Raspbian"], //plus
         ]
     },
     {
         "title": "Windows",
-        "pourcent": 50,
+        "pourcent": 40,
         "certif": false,
         "desc": [
-            ["Navigation simple dans la console", "J'utilise actuellement cet OS dans mon quotidien"], //plus
+            ["Shell"], //plus
         ]
     }
 ];

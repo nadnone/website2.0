@@ -20,7 +20,8 @@ function goButton(where){
 
   // document.body.scrollTo(0, window.innerHeight*2);
   //document.getElementById(where).scrollIntoView();
-  document.querySelector(".main .container").style.opacity = "0";
+
+  //document.querySelector(".main .container").style.opacity = "0";
   
 
   setTimeout(() => {
@@ -52,7 +53,8 @@ function goBack(node){
   setTimeout(function(){
     node.parentNode.parentNode.style.display = "none";
     node.parentNode.style.display = "none";
-    document.querySelector(".main .container").style.opacity = "1";
+
+    //document.querySelector(".main .container").style.opacity = "1"; 
   }, 1200);
 
 
