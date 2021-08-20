@@ -18,15 +18,15 @@ let skills =
     },
     {
         "title": "Python",
-        "pourcent": 40,
+        "pourcent": 20,
         "certif": false,
         "desc": [
-            ["Initiation à la programmation avec la version 2.7", "Création de connexion en sockets TCP/IP en python 2.7", "Apprentissage de python 3"], //plus
+            ["Initiation à la programmation avec la version 2.7", "Création de connexion en sockets TCP/IP en python 2.7"], //plus
         ]
     },
     {
         "title": "Réseau",
-        "pourcent": 40,
+        "pourcent": 50,
         "certif": "certificates/Certificat%20OCR%20-%20Apprenez%20le%20fonctionnement%20des%20r%C3%A9seaux%20TCPIP.pdf",
         "desc": [
             ["Programation de serveurs TCP/IP et Websocket"], //plus
@@ -41,7 +41,7 @@ let skills =
         ]
     }, {
         "title": "C++17",
-        "pourcent": 30,
+        "pourcent": 50,
         "certif": "https://www.sololearn.com/Certificate/1051-4957650/pdf/",
         "desc": [
             ["En cours d'étude", "Connaissances de bases", "Tentative d'utilisation de OpenGL"], //plus
@@ -49,7 +49,7 @@ let skills =
     },
     {
         "title": "GNU/Linux",
-        "pourcent": 55,
+        "pourcent": 60,
         "certif": false,
         "desc": [
             ["Commandes Unix", "Apache2", "Debian/Ubuntu/Rasbian", "Modifications rapides avec nano", "utilisé depuis 2016", "Crée et géré de petits serveurs personnels avec Ubuntu/Debian/Raspbian"], //plus
