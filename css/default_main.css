@@ -10,7 +10,7 @@
     --primary_dark: #071866;
 
 
-    --secondary_light: #4e5b7055;
+    --secondary_light: #4e5b705f;
     --secondary_dark: #093475;
 
     --full_screen: 100%;
@@ -21,6 +21,5 @@ body{
 }
 
 .scroll_popup{
-    background-color: var(--primary);
-    backdrop-filter: blur(60px);
+    background-color: var(--secondary_dark);
 }

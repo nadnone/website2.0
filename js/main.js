@@ -272,10 +272,10 @@ function closeSkillShow(){
 
     // TODO ici
 
-    svg.addEventListener("click", (event) => {
+    /*svg.addEventListener("click", (event) => {
       openSkillShow(skills[i].title, event)
     })
-
+  */
     
   }
 

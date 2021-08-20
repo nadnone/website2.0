@@ -9,24 +9,8 @@ let skills =
         ]
     },
     {
-        "title": "Html",
-        "pourcent": 80,
-        "certif": "https://www.sololearn.com/Certificate/1014-4957650/pdf/",
-        "desc": [
-            ["Les fondamentaux"], //plus
-        ]
-    },
-    {
-        "title": "Css",
-        "pourcent": 50,
-        "certif": "https://www.sololearn.com/Certificate/1023-4957650/pdf/",
-        "desc": [
-            ["Cours en ligne suivis"], //plus
-        ]
-    },
-    {
         "title": "PHP",
-        "pourcent": 20,
+        "pourcent": 30,
         "certif": "https://www.sololearn.com/Certificate/1059-4957650/pdf/",
         "desc": [
             ["Participation à des projets en PHP", "Mélanger du JavaScript avec du PHP et HTML/CSS", "Utilisation simple de PDO"], //plus
@@ -41,30 +25,6 @@ let skills =
         ]
     },
     {
-        "title": "Bash",
-        "pourcent": 35,
-        "certif": false,
-        "desc": [
-            ["Automatisation de tâches sous Linux"], //plus
-        ]
-    },
-    {
-        "title": "C#",
-        "pourcent": 40,
-        "certif": "https://www.sololearn.com/Certificate/1080-4957650/pdf/",
-        "desc": [
-            ["Essai de programmation 3D"], //plus
-        ]
-    },
-    {
-        "title": "React Native",
-        "pourcent": 25,
-        "certif": false,
-        "desc": [
-            ["En cours d'étude", "Applications mobile Android sans utilisation directe des composants de l'appareil"], //plus
-        ]
-    },
-    {
         "title": "Réseau",
         "pourcent": 40,
         "certif": "certificates/Certificat%20OCR%20-%20Apprenez%20le%20fonctionnement%20des%20r%C3%A9seaux%20TCPIP.pdf",
@@ -73,18 +33,18 @@ let skills =
         ]
     },
     {
-        "title": "SQL",
+        "title": "MySQL/MariaDB",
         "pourcent": 25,
         "certif": false,
         "desc": [
             ["Ajout, modification, séléction ou suppréssion de ligne(s)", "Création de tables simples"], //plus
         ]
     }, {
-        "title": "C++",
+        "title": "C++17",
         "pourcent": 30,
         "certif": "https://www.sololearn.com/Certificate/1051-4957650/pdf/",
         "desc": [
-            ["En cours d'étude", "Connaissances de bases"], //plus
+            ["En cours d'étude", "Connaissances de bases", "Tentative d'utilisation de OpenGL"], //plus
         ]
     },
     {
@@ -92,15 +52,7 @@ let skills =
         "pourcent": 55,
         "certif": false,
         "desc": [
-            ["Navigation dans le terminal", "Modifications rapides avec nano", "utilisé depuis 2016", "Crée et géré de petits serveurs personnels avec Ubuntu/Debian/Raspbian"], //plus
-        ]
-    },
-    {
-        "title": "Windows",
-        "pourcent": 40,
-        "certif": false,
-        "desc": [
-            ["Shell"], //plus
+            ["Commandes Unix", "Apache2", "Debian/Ubuntu/Rasbian", "Modifications rapides avec nano", "utilisé depuis 2016", "Crée et géré de petits serveurs personnels avec Ubuntu/Debian/Raspbian"], //plus
         ]
     }
 ];

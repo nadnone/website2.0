@@ -1,32 +1,38 @@
 const gallery_items = [
 
-
     {
-        "title": "DactyloLibre 2020",
+    
+        "title": "Apprentissage OpenGL 4.5 (2021)",
+        "desc": "Je suis en train d'apprendre à utiliser la bibliothèque graphique OpenGL",
+        "link": "https://github.com/spoutnik911/learn_opengl450",
+        "image": "res/logoNadUnkownSwissMann.png"
+    },
+    {
+        "title": "DactyloLibre (2020)",
         "desc": "Ce petit logiciel vous aidera à former vos compétences de dactylographie gratuitement. Ceci est un remake de mon logiciel original en Javascript",
         "link": "https://github.com/spoutnik911/DactyloLibre-CsharpVersion",
         "image": "https://github.com/spoutnik911/DactyloLibre-CsharpVersion/raw/master/demo/demo.gif"
     },
     {
-        "title": "chat-server 2018",
+        "title": "chat-server (2018)",
         "desc": "Ce projet est une archive d'un petit chat que j'avais crée en 2018",
         "link": "https://github.com/spoutnik911/chat_server",
         "image": "res/demo-ChatIntern.gif"
     },
     {
-        "title": "chat-server 2016",
+        "title": "chat-server (~2016)",
         "desc": "Ce projet à été à l'origine d'un défis que je me suis posé en 2016, envoyer un message entre deux ordinateurs à travers le réseau, tout ça via mon propre programme Ce programme est vraiment basique, il m'a néanmoins permis de pratiquer et mieux comprendre le TCP/IPv4",
         "link": "https://github.com/spoutnik911/SocketChatPy",
         "image": "res/screenshot_socketchatpy.jpg"
     },
     {
-        "title": "Mon satellite imaginaire 2021",
+        "title": "Mon satellite imaginaire (2021)",
         "desc": "J'ai repris un vieux projet qui prenait la poussière, calculer l'orbite d'un satellite avec les lois de Kepler ! après des heures de recherches, j'ai réussi à calculer la position d'un satellite imaginaire et l'afficher à l'écran",
-        "link": "https://nadirfelder.com/monSatellite/",
+        "link": "./monSatellite/",
         "image": "res/satelliteProjet.gif"
     },
     {
-        "title": "Panneau d'affichage 2021",
+        "title": "Panneau d'affichage (2021)",
         "desc": "Affichage numérique sur page web pour échanger des informations entre particuliers",
         "link": "https://github.com/spoutnik911/affichage_numerique_web",
         "image": "res/demoWebapp.jpg"

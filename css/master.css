@@ -117,7 +117,8 @@ body, html {
   align-items: center;
   justify-content:center;
   flex-direction: column;
-  background-color: var(--secondary_light);
+  background-color: var(--secondary_dark);
+  /*background-color: var(--secondary_light);*/
 }
 .main {
   margin-top: 15px;
@@ -141,13 +142,13 @@ body, html {
   justify-content: center;
   user-select: none;
 }
-.menubg .logo {
+/*.menubg .logo {
     background-image: url("../res/logo_nf.png");
     background-repeat: no-repeat;
     background-size: 100%;
     width: 240px;
     height: 240px;
-}
+}*/
 .bg .super_container .arrow:hover{
     opacity: 1;
     transition: opacity 0.5s;
@@ -196,7 +197,7 @@ ul li {
     transition: background-color 0.5s;
 }
 .main .button:hover {
-    background-color: var(--secondary_dark) !important;
+    background-color: var(--primary_dark) !important;
     transition: background-color 0.5s;
 }
 /* *********** */
@@ -323,7 +324,7 @@ CONTACT
 }
 #Contact .picture_circle{
     margin: 25pt 0;
-    background-image: url("../res/moi_2_alpha.png");
+    background-image: url("../res/PP_moi.png");
     background-size: cover;
     background-position: center;
     background-color: var(--secondary_dark);
