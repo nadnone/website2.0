@@ -2,10 +2,10 @@ const gallery_items = [
 
     {
     
-        "title": "Apprentissage OpenGL 4.5 (2021)",
-        "desc": "Je suis en train d'apprendre à utiliser la bibliothèque graphique OpenGL",
+        "title": "Learn_OpenGL450 (2021)",
+        "desc": "Je suis en train d'apprendre à utiliser la bibliothèque graphique OpenGL 4.5",
         "link": "https://github.com/spoutnik911/learn_opengl450",
-        "image": "res/logoNadUnkownSwissMann.png"
+        "image": "https://raw.githubusercontent.com/spoutnik911/learn_opengl450/main/readme_res/spinning_triangle.gif"
     },
     {
         "title": "DactyloLibre (2020)",
