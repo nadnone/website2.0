@@ -2,11 +2,12 @@ function writesite()
 {
     let text = document.location.href;
     let i = 0;
-    let rand = Math.floor(Math.random() * 1000);
+    let rand = Math.floor(Math.random() * 10000);
 
     setInterval(() => {
+        rand = Math.floor(Math.random() * 10000);
         i = writeloop(text, i)
-    }, rand % 450);
+    }, rand % 460);
 
 }
 function writeloop(text, i)
