@@ -1,26 +1,29 @@
+let text_current_char = 0;
+
 function writesite()
 {
-    let text = document.location.href;
-    let i = 0;
-    let rand = Math.floor(Math.random() * 10000);
 
-    setInterval(() => {
-        rand = Math.floor(Math.random() * 10000);
-        i = writeloop(text, i)
-    }, rand % 460);
-
+    setInterval(constantLoop, 400);
 }
-function writeloop(text, i)
+function writeloop()
 {
-    if(i < text.length){
-        document.getElementById("blocktowrite").innerText += text[i];
-        i++;
+    let text = "nadnone.ch";
+
+    if(text_current_char < text.length){
+        document.getElementById("blocktowrite").innerText += text[text_current_char];
+        text_current_char++;
     }
     else 
     {
-        i = 0;
+        text_current_char = 0;
         document.getElementById("blocktowrite").innerText = "";   
     }
-    return i;
+
 }
 
+function constantLoop()
+{
+    let rand = Math.floor(Math.random() * 1500) + 600;
+    setTimeout(writeloop, rand);
+
+}

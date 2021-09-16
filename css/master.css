@@ -230,10 +230,11 @@ ul li {
     z-index: 1;
 }
 
-.skillHover:hover{
+/*.skillHover:hover{
     fill: var(--primary_light);
     z-index: 10;
 }
+*/
 .skillHover{
     fill: var(--secondary_light);
 }
