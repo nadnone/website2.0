@@ -19,6 +19,7 @@ body, html {
     background-size: cover;
     color: var(--primary);
     height: var(--full_screen);
+    background-image: var(--background_image);
 }
 
 /*THEMES*/
@@ -324,7 +325,7 @@ CONTACT
 }
 #Contact .picture_circle{
     margin: 25pt 0;
-    background-image: url("../res/PP_moi.png");
+    background-image: var(--pp_contact);
     background-size: cover;
     background-position: center;
     background-color: var(--secondary_dark);
@@ -410,11 +411,6 @@ CONTACT
     text-align: center;
     font-size: 22pt;
     color: var(--text_on_primary);
-    transition: transform 0.5s;
-}
-.scroll_popup .popup .back:hover {
-    transform: scale(1.5,1.5);
-    transition: transform 0.5s;
 }
 
 

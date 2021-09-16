@@ -14,10 +14,11 @@
     --secondary_dark: #093475;
 
     --full_screen: 100%;
-}
 
-body{
-    background-image: url("../res/background_low.jpg");
+
+    --pp_contact: url("https://avatars.githubusercontent.com/u/34311347");
+
+    --background_image: url("../res/background_low.jpg");
 }
 
 .scroll_popup{

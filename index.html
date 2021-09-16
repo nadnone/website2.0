@@ -29,6 +29,7 @@
       <script src="js/popup.js" defer charset="utf-8"></script>
       <script src="js/gallery_func.js" defer charset="utf-8"></script>
       <script src="js/window_resize_mobile.js" charset="utf-8"></script>
+      <script src="js/whitesitename.js" charset="utf-8"></script>
 
       <title>Portfolio</title>
 
@@ -111,30 +112,28 @@
 
 
 
-    <div id="menubg" class="menubg" onmouseover='closeSkillShow()'>
+    <div id="menubg" class="menubg">
+
       <div id="main" class="main">
-      
-          
-          <div id="triangleMenu">
-              <div class="bubble">
-                <div onclick=""class="logo"></div>
-            </div>
-          </div>
 
         <div class="container">
-          
-          <div onclick="goButton('think')" class="button left_menu_btn">
-            À propos
+          <div id="blocktowrite" class="overbuttons">
           </div>
-          <div onclick="goButton('Skills')" class="button">
-            Skills
+          <div class="buttons">
+            <!--<div onclick="goButton('think')" class="button left_menu_btn">
+              À propos
+            </div>-->
+            <div onclick="goButton('Skills')" class="button">
+              Skills
+            </div>
+            <div onclick="goButton('Gallery')" class="button">
+              Gallerie
+            </div>
+            <div onclick="goButton('Contact')" class="button right_menu_btn">
+              Contact
+            </div>
           </div>
-          <div onclick="goButton('Gallery')" class="button">
-            Gallerie
-          </div>
-          <div onclick="goButton('Contact')" class="button right_menu_btn">
-            Contact
-          </div>
+        
         
         </div>
       </div>
@@ -156,7 +155,7 @@
 
 
 
-      <div id="think" class="popup">
+      <!--<div id="think" class="popup">
           <div class="titre">
             À propos de moi
           </div>
@@ -166,29 +165,6 @@
               Je suis une personne de 
               <span id="mon_age"></span> ans au parcours plutôt atypique qui vit dans le canton de Neuchâtel.<br />
               <br />
-              Passionné d’informatique depuis mon enfance, je m'intéresse beaucoup à l'électronique et l’informatique en général, je commence à démonter beaucoup d’appareils
-              électroniques qui me passent au travers des mains, dans le but de vouloir comprendre leur fonctionnement. En vacance, je m'intéressais à l'électronique via un
-              membre de ma famille.<br />
-              <br />
-              Passant par une scolarité obligatoire classique, je choisis de faire un CFC électronicien car, proche du métier d’informatique, je pensais qu’il me plairait,
-              cependant ce n’était pas le cas, en raison de l’école mais aussi du programme dans lequel je ne m'épanouit pas. Je me tourne donc vers un lycée privé en
-              quittant ma formation en école technique. Une fois dans ce gymnase, je passe environ 1 an et demi avant de partir pour des raisons personnelles.<br />
-              <br />
-              Deux ans après, je reprend le chemin de la formation CFC à mes 21 ans, mais je la quitte en 2018. Cela dit, pendant tout ce temps depuis mes 16 ans, j’apprends à mes heures 
-              perdues à programmer en tant qu’autodidacte. Je survole plusieurs langages et notions. Bien-sûr, j’ai encore beaucoup à apprendre aujourd’hui.</br>
-              <br/>
-
-              En 2018, dans le cadre d’une formation en alternance, je participe à des projets et me forme de façon plus poussée à certains langages comme le JavaScript, PHP, un peu de C#,
-              de la 2D où j’y fais un jeu deux joueurs, j’y ai gagné de meilleures connaissances en réseau. J’ai aussi été mieux sensibilisé à l’indentation
-              et l’ergonomie. Après avoir quitté ma formation, j’ai continué à me former tout seul chez moi, dont certains projets sont publiés sur
-              <a style="color:inherit;text-decoration: underline;" href="https://github.com/spoutnik911" target="_blank"> ma page GitHub.</a><br/>
-              
-              <table>
-                <tr><td class="li">2016</td><td>Commencement de mon apprentissage via le site de OpenClassrooms, anciennement Le site du zéro.</td></tr>
-                <tr><td class="li">2017</td><td>Révision, acquisition de mes connaissances et formation parallèle en alternance/dual.</td></tr>
-                <tr><td class="li">2020</td><td>Reprise de cours théoriques en ligne et révision de l'anglais.<br>Recherche de stages dans le vaste domaine de l’informatique.</td></tr>
-                <tr><td class="li">2021</td><td>Révision de mon site web et quelques projets personnels réalisés.<br/>Je retente une formation CFC ou autre. Après ou si je foire, je tente un ultime plan B.</td></tr>
-              </table>
             </span>
                             
    
@@ -200,13 +176,13 @@
             Retour
           </div>
       </div>
+    -->
 
 
 
 
 
-
-      <div id="Gallery" class="popup" onmouseover="closeSkillShow()">
+      <div id="Gallery" class="popup">
         <div class="titre">
           Gallerie
         </div>
@@ -231,7 +207,7 @@
 
 
 
-      <div id="Contact" class="popup" onmouseover="closeSkillShow()">
+      <div id="Contact" class="popup" >
           <div class="titre">
               Contact
           </div>
@@ -260,7 +236,7 @@
 
 
 
-      <div id="Skills" class="popup" onmouseover="closeSkillShow()">
+      <div id="Skills" class="popup" >
         <div class="titre">
           Compétences
         </div>

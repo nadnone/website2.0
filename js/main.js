@@ -79,64 +79,6 @@ function show_ageInfo(){
 
 
 
-
-
-
-/* Box info details */
-
-function openSkillShow(title, e){
-  
-  let box = document.getElementById("box_info");
-
-  let info;
-  let certif = "";
-  for (let i = 0; i < skills.length; i++) {
-    if (skills[i].title === title){
-      info = (!skills[i].desc ? false : skills[i].desc);
-      certif = skills[i].certif;
-
-      box.onclick = () => {
-        if (!skills[i].certif) return;
-        goLink(skills[i].certif)
-      };
-
-    }
-  }
-  if(!info) return;
-
-  box.innerHTML = `
-    <table>
-      <th>Connaissances</th>
-  `;
-
-  for (let i = 0; i < info[0].length; i++) {
-    document.querySelector("#box_info table").innerHTML += `
-    <tr><td>- ${info[0][i]}</td></tr>
-  `;
-  }
-  box.innerHTML += `
-    </table>
-    ${(!certif ? "" : `<font style="font-weight: lighter; color: #A9A9A9";> [*] Vous pouvez cliquer sur ce panel pour voir le cértificat.</font>`)}
-  `;
-
-
-
-  box.style.top = (e.clientY >= window.screen.height - 400 ? window.screen.height - 400 : e.clientY) + "px";
-  box.style.left = (e.clientX >= window.screen.width - 400 ? window.screen.width - 400 : e.clientX) + "px";
-  box.style.visibility = "visible";
-  box.style.opacity = "1";
-
-
-}
-
-
-function closeSkillShow(){
-  let box = document.getElementById("box_info");
-  box.style.opacity = "0";
-}
-
-
-
 /* ******** PRE - CHARGEMENT    ********* */
 
 
@@ -264,21 +206,6 @@ function closeSkillShow(){
   contenu.innerHTML += ""
 
 
-  for (let i = 0; i < skills.length; i++) {
-
-    let svg = document.getElementById(`ID${skills[i].title}`)
-
-    let coord = svg.getElementById("stats").getAttribute("d").match(/L([0-9]+\.[0-9]+)\s([0-9]+\.[0-9]+)/m)
-
-    // TODO ici
-
-    /*svg.addEventListener("click", (event) => {
-      openSkillShow(skills[i].title, event)
-    })
-  */
-    
-  }
-
 
   }
 
@@ -358,7 +285,8 @@ function preload(){
   setTimeout(() => {
     document.querySelector(".main .container").style.opacity = "1";
   }, 2300);
-
+  
+  writesite();
 }
 
 window.addEventListener("orientationchange", () => {
