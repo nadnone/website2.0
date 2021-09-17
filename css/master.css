@@ -4,10 +4,6 @@ html, :root{
 div{
     color: var(--text_on_primary);
 }
-.uk-notification-message{
-    background-color: var(--primary) !important;
-    color: var(--text_on_primary);
-}
 body, html {
     font-family: 'Open Sans', sans-serif;
     height: max-content;
@@ -108,9 +104,6 @@ body, html {
     display: flex;
     justify-content: center;
     flex-flow: column;
-}
-.button, .back{
-    user-select: none;
 }
 .menubg {
   height: 100%;
@@ -224,7 +217,6 @@ ul li {
     height: max-content;
     width: max-content;
 }
-
 .skill_pourcent{
     fill: var(--primary_dark);
     z-index: 1;
@@ -402,16 +394,6 @@ CONTACT
     text-decoration: underline;
     color: var(--text_on_primary);
     transition: color 0.5s;
-}
-.scroll_popup .popup .back {
-    display: flex;
-    align-self: center;
-    justify-content: center;
-    margin: 15px;
-    align-items: center;
-    text-align: center;
-    font-size: 22pt;
-    color: var(--text_on_primary);
 }
 
 

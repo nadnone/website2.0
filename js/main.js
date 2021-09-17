@@ -30,10 +30,12 @@ function goButton(where){
     }
 
     window.scrollTo(0, i*100);
-    i += 0.8; 
+    i += 0.5; 
   }, 60);
   
-  
+  window.addEventListener("wheel", () => {
+    clearInterval(scrollID);
+  });
 
   //document.querySelector(".main .container").style.opacity = "0";
   
@@ -85,10 +87,11 @@ function show_ageInfo(){
  let contenu = document.getElementById("Skills").getElementsByClassName("contenu")[0];
   contenu.innerHTML = "";
 
+
   let canvas = document.createElement("svg")
 
-  canvas.setAttribute("width", window.screen.width/1.2)
-  canvas.setAttribute("height",  window.screen.height/1.2)
+  canvas.setAttribute("width", window.screen.width/1.1)
+  canvas.setAttribute("height",  window.screen.height/1.1)
   canvas.setAttribute("id", "canvas")
 
   let centercanvas = {
@@ -178,10 +181,12 @@ function show_ageInfo(){
     let text = document.createElement("text")
 
     let tmpRad = (i * rad) + rad/2
-  
-    text.setAttribute("x", centercanvas.x+(r*1.1* Math.cos(tmpRad)))
-    text.setAttribute("y", centercanvas.y+(r*1.1* Math.sin(tmpRad)))
+    
+
+    text.setAttribute("x", centercanvas.x + (r * Math.cos(tmpRad)) * 1.1)
+    text.setAttribute("y", centercanvas.y + (r * Math.sin(tmpRad)) * 1.1)
     text.setAttribute("font-weight", "bold")
+    text.setAttribute("font-size", window.screen.height < 500 ? 12 : 18)
     
     text.innerText = skills[i].title
 
@@ -203,7 +208,7 @@ function show_ageInfo(){
   }
 
 /* 
-    SKILLS triage
+    SKILLS old tri function
  */
 
 function skillsort(){
@@ -247,7 +252,7 @@ function skillsort(){
 function skillLoad(){
 
 
-  if(window.innerWidth < 1200) {
+  if(window.innerWidth < 600 && !window.screen.orientation.type.includes("landscape")) {
     skillsort()
   }
   else{  
@@ -272,7 +277,6 @@ function preload(){
 /* LAUNcHING FUNCTION */
 
   document.querySelector(".main .container").style.opacity = "1";
-  console.log(window.screen.orientation);
   if (window.screen.width > 1201 || window.screen.orientation.type.includes("landscape")) writesite();
 }
 

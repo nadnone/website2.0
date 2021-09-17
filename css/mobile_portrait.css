@@ -47,16 +47,9 @@
         width: 100%;
         height: 10%;
     }
-    .scroll_popup .popup .back {
-        width: 90vw;
-        height: 20%;
-    }
     #think {
         margin-top: 2%;
         width: 90%;
-    }
-    #think .back {
-        width: 100%;
     }
     #think tr{
         display: inline-block;

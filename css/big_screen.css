@@ -17,10 +17,6 @@
     .scroll_popup .popup .categorie .cat {
         height: auto;
     }
-    .scroll_popup .popup .back {
-        width: 200px;
-        height: 30px;
-    }   
     #Gallery{
         justify-content: center;
     }
@@ -52,6 +48,8 @@
             width: 300px;
             height: 100px;
             font-size: 25pt;
+            background-color: var(--primary_light);
+            cursor: pointer;
     }
     #Gallery .categorie{
         height: 100vh;
@@ -59,9 +57,7 @@
     }
     #Gallery .item {
         height: 45%;
-    }
-    #Gallery .back{
-        margin-top: 10pt;
+        cursor: pointer;
     }
 
     .menubg .logo{
