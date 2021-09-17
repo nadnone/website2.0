@@ -272,8 +272,8 @@ function preload(){
 /* LAUNcHING FUNCTION */
 
   document.querySelector(".main .container").style.opacity = "1";
-  
-  writesite();
+  console.log(window.screen.orientation);
+  if (window.screen.width > 1201 || window.screen.orientation.type.includes("landscape")) writesite();
 }
 
 window.addEventListener("orientationchange", () => {
