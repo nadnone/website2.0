@@ -15,7 +15,7 @@ function techload(){
         let yPos = 0;
         if (i < 5)
         {
-            yPos = canvas.getAttribute("height") - (canvas.getAttribute("height") / 4 * (i+1)) ;
+            yPos = canvas.getAttribute("height") - (canvas.getAttribute("height") / 4 * (i+1) ) ;
         }
         else
         {
@@ -28,6 +28,7 @@ function techload(){
         progressbar_base.setAttribute("height", window.screen.height < 600 ? 30 : 60);
         progressbar_base.setAttribute("x", centercanvas.x/1.4);
         progressbar_base.setAttribute("y", yPos);
+        progressbar_base.setAttribute("style", "stroke:white; stroke-width:0.2;");
         progressbar_base.setAttribute("class", "skillHover");
     
         
@@ -58,6 +59,6 @@ function techload(){
 
 
     
-    document.querySelectorAll("#Skills .contenu")[0].innerHTML += "";
+    document.querySelector("#Skills").innerHTML += "";
 }
 

@@ -5,10 +5,6 @@ let skills =
         "pourcent": 65
     },
     {
-        "title": "PHP",
-        "pourcent": 30
-    },
-    {
         "title": "Python",
         "pourcent": 40
     },
@@ -17,7 +13,7 @@ let skills =
         "pourcent": 50
     },
     {
-        "title": "MySQL/MariaDB",
+        "title": "SQL",
         "pourcent": 25
     }, {
         "title": "C/C++",

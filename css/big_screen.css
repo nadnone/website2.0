@@ -20,9 +20,6 @@
     #Gallery{
         justify-content: center;
     }
-    #Skills{
-        padding: 15pt;
-    }
     .main .overbuttons {
         display: flex;
         justify-content: center;

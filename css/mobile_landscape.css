@@ -74,21 +74,9 @@
         display: none;
     }
 
-  
-    #Skills{
-        height: auto;
-        width: 100%;
-    }
     #Skills .subtitle{
     width: 100%;
     text-align: left;
-    }
-    #Skills .contenu{
-        display: flex;
-        font-size: 20pt;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
     }
     .skillbox{
         display: flex;

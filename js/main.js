@@ -91,22 +91,24 @@ function skillLoad(){
 }
 
 /* GET AGE */
-
+/*
 function getAge() {
   let age = (Date.now() - new Date(1996, 6, 17).getTime()) / 1000;
   age /= (24 * 3600 * 365)
   document.getElementById("mon_age").innerText = parseInt(age)
 }
-
+*/
 
 
 /* ****** */
 
-function preload(){
-  
-/* LAUNcHING FUNCTION */
+async function preload(){
 
-  document.querySelector(".main .container").style.opacity = "1";
+/* LAUNcHING FUNCTION */
+ setTimeout(() => {
+    document.querySelector(".menubg").style.opacity = "1";
+  }, 500);
+
   if (window.screen.width > 1201 || window.screen.orientation.type.includes("landscape")) writesite();
 }
 

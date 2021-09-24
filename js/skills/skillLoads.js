@@ -5,14 +5,14 @@
   */
   function spectralSkillsLoad(){
 
-    let contenu = document.getElementById("Skills").getElementsByClassName("contenu")[0];
+    let contenu = document.getElementById("Skills");
      contenu.innerHTML = "";
    
    
      let canvas = document.createElement("svg")
    
-     canvas.setAttribute("width", window.screen.width/1.1)
-     canvas.setAttribute("height",  window.screen.height/1.1)
+     canvas.setAttribute("width", window.innerWidth/1.2)
+     canvas.setAttribute("height",  window.innerHeight)
      canvas.setAttribute("id", "canvas")
    
      let centercanvas = {
@@ -60,8 +60,7 @@
        canvas.appendChild(path_skills)
    
      }
-   
-   
+   /*
      for (let i = 0; i < skills.length; i++) {
    
        let svg = document.createElement("svg")
@@ -89,7 +88,7 @@
    
    
      }
-   
+   */
    
      polyline_info.setAttribute("style", "fill:none;stroke:white;stroke-width:0.2;")
    
@@ -104,8 +103,8 @@
        let tmpRad = (i * rad) + rad/2
        
    
-       text.setAttribute("x", centercanvas.x + (r * Math.cos(tmpRad)) * 1.1)
-       text.setAttribute("y", centercanvas.y + (r * Math.sin(tmpRad)) * 1.1)
+       text.setAttribute("x", centercanvas.x + (r * Math.cos(tmpRad)) )
+       text.setAttribute("y", centercanvas.y + (r * Math.sin(tmpRad)) )
        text.setAttribute("font-weight", "bold")
        text.setAttribute("font-size", window.screen.height < 500 ? 12 : 18)
        
@@ -134,7 +133,7 @@
    
    function skillsort(){
    
-     let contenu = document.getElementById("Skills").getElementsByClassName("contenu")[0];
+     let contenu = document.getElementById("Skills");
      contenu.innerHTML = "";
      
    

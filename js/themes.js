@@ -29,6 +29,24 @@ function theme_menu(){
 
                     break;
 
+                case "Blackboard":
+                    style.setProperty("--primary", "#2b2b2b"); 
+                    style.setProperty("--secondary", "#000000"); 
+
+                    style.setProperty("--text_on_primary", "#ffffff"); 
+                    style.setProperty("--text_on_secondary", "#ffffff"); 
+
+                    style.setProperty("--primary_light", "#383838"); 
+                    style.setProperty("--primary_dark", "#616161"); 
+
+                    style.setProperty("--secondary_light", "#3636365f"); 
+                    style.setProperty("--secondary_dark", "#000000"); 
+
+                    title.innerText = "Theme Blackboard"
+
+                    break;
+
+
                 case "Glass":
 
                     style.setProperty("--primary", "#5555555f"); 

@@ -67,16 +67,12 @@
     
     #Skills{
         height: auto;
+        width: 100%;
+        font-size: 20pt;
     }
     #Skills .subtitle{
     width: 100%;
     text-align: left;
-    }
-    #Skills .contenu{
-        display: flex;
-        font-size: 20pt;
-        flex-direction: column;
-        justify-content: space-between;
     }
     .skillbox{
         display: flex;
