@@ -6,7 +6,7 @@ div{
 }
 body, html {
     font-family: 'Open Sans', sans-serif;
-    height: max-content;
+    width: 100%;
     margin: 0;
     padding: 0;
     background-repeat: no-repeat;
@@ -176,7 +176,7 @@ ul li {
 #Skills{
     height: max-content;
     width: max-content;
-    padding: 15pt;
+    /*padding: 15pt;*/
 }
 .skill_pourcent{
     fill: var(--primary_dark);

@@ -8,4 +8,9 @@ function resize(){
 
 }
 
-resize()
+
+if (window.screen.width > 1201)
+{
+    resize()
+}
+
