@@ -5,7 +5,7 @@ let technologies_stats = [
     },
     {
         "name": "Français",
-        "pourcent": 75
+        "pourcent": 80
     }
     
 ];
