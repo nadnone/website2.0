@@ -1,4 +1,4 @@
-function loagGallery(){
+function loadGallery(){
 
     let contenu = document.querySelector("#Gallery .categorie")
 

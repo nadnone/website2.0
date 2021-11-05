@@ -10,9 +10,10 @@
 let sectionOpened = false;
 
 function goButton(where){
-  if (sectionOpened !== false) { document.getElementById(sectionOpened).parentNode.style.display = "none"; document.getElementById(sectionOpened).style.display = "none"; }
- 
-  //UIkit.scroll('').scrollTo(`.main`, {duration: 0});
+  if (sectionOpened !== false) 
+  {
+     document.getElementById(sectionOpened).parentNode.style.display = "none"; document.getElementById(sectionOpened).style.display = "none"; 
+  }
 
 
   document.getElementById(where).style.display = "flex";
@@ -42,11 +43,19 @@ function goButton(where){
   
 
   sectionOpened = where;
+  
+  switch (where) {
+    case "Skills":
+        skillLoad();
+      break;
 
-  if (where === "Skills") skillLoad();
-  else if (where === "think") getAge();
-  else if (where === "Gallery") loagGallery();
+    case "Gallery":
+        loadGallery();
+      break;
 
+    default:
+      break;
+  }
   
 }
 
@@ -110,6 +119,7 @@ async function preload(){
   }, 500);
 
   if (window.screen.width > 1201 || window.screen.orientation.type.includes("landscape")) writesite();
+  //writesite();
 }
 
 window.addEventListener("orientationchange", () => {

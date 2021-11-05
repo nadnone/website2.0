@@ -6,6 +6,8 @@ function theme_menu(){
     
     boxtheme.addEventListener("click", (event)=> {
 
+        // TODO OPTIMIZE !
+
 
         if (event.target.className ===  "select_theme_options"){
             let theme = event.target.innerText

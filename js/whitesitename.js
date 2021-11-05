@@ -8,15 +8,16 @@ function writesite()
 function writeloop()
 {
     let text = "nadnone.ch";
+    let blocktowrite = document.getElementById("blocktowrite");
 
     if(text_current_char < text.length){
-        document.getElementById("blocktowrite").innerText += text[text_current_char];
+        blocktowrite.innerText += text[text_current_char];
         text_current_char++;
     }
     else 
     {
         text_current_char = 0;
-        document.getElementById("blocktowrite").innerText = "";   
+        blocktowrite.innerText = "";   
     }
 
 }
@@ -27,3 +28,4 @@ function constantLoop()
     setTimeout(writeloop, rand);
 
 }
+

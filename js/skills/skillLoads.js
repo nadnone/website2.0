@@ -1,6 +1,6 @@
 
 /*
-  SKILLS SPECTRE GRAPH
+  SKILLS SPECTRO GRAPH
 
   */
   function spectralSkillsLoad(){
