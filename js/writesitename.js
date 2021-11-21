@@ -7,7 +7,7 @@ function writesite()
 }
 function writeloop()
 {
-    let text = "nadnone.ch";
+    let text = "nadnone.ch\xa0:)";
     let blocktowrite = document.getElementById("blocktowrite");
 
     if(text_current_char < text.length){
@@ -24,7 +24,7 @@ function writeloop()
 
 function constantLoop()
 {
-    let rand = Math.floor(Math.random() * 1500) + 600;
+    let rand = Math.floor(Math.random() * 1000) + 600;
     setTimeout(writeloop, rand);
 
 }
