@@ -118,8 +118,13 @@ async function preload(){
     document.querySelector(".menubg").style.opacity = "1";
   }, 500);
 
+  setTimeout(() => {
+    hiddenCube();
+  }, 1600);
+
   if (window.screen.width > 1201 || window.screen.orientation.type.includes("landscape")) writesite();
   //writesite();
+
 }
 
 window.addEventListener("orientationchange", () => {
