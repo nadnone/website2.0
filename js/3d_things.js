@@ -1,6 +1,9 @@
 
 function hiddenCube()
 {
+  
+  let objects = []
+
   const scene = new THREE.Scene();
   const camera = new THREE.PerspectiveCamera( 75, window.innerWidth/window.innerHeight, 0.1, 1000 );
 
@@ -10,64 +13,54 @@ function hiddenCube()
   renderer.setSize( window.innerWidth, window.innerHeight );
   document.body.appendChild( renderer.domElement );
 
-  const geometry = new THREE.BoxGeometry( 1.25, 1.25, 1.25 );
-  const color0 = new THREE.MeshBasicMaterial( { color: 0xffffff } );
-  const color1 = new THREE.MeshBasicMaterial( { color: 0x0000ff } );
-  const color2 = new THREE.MeshBasicMaterial( { color: 0x000000 } );
-  const cube = new THREE.Mesh( geometry, color0 );
-  scene.add( cube );
+  const geometry = new THREE.BoxGeometry( 3, 3, 3);
+  const color0 = new THREE.MeshPhongMaterial( { color: 0x0e1fe3 } );
 
-  color = 0 // 0, 1, 2
-  time = 0
 
-  posX = 0
-  posY = -4
-  factore = 1
+  xPos = [10, 0, -10]
+
+  for (let i = 0; i < 3; i++) {
+
+      let cube = new THREE.Mesh( geometry, color0)
+    
+      cube.position.z = -10;
+      cube.position.y = 0;    
+      cube.position.x = xPos[i];    
+
+      scene.add( cube );
+      objects.push(cube) 
+    
+    }
+
+
+  const light = new THREE.PointLight(0xffffff, 10, 500)
+  light.position.set(0.0, 0.0, 50.0)
+  scene.add(light)
+
+
 
   let animationLoop = () => {
 
-      cube.rotation.y += 0.01;
-      cube.rotation.z += 0.01;
-      cube.rotation.x += 0.01;
-      
-
-      if (time < 60 == 0) cube.position.x = posX+= factore;
-      else if (time < 120) cube.position.y = posY+= factore;
-      else if (time < 180) cube.position.x = posX-= factore;
-      else if (time < 150) cube.position.y = posY-= factore;
-    
-      if (time % 60 == 0)
-      {
-        factore = factore == 0.1 ? -0.1 : 0.1;
-
-        switch (color) {
-          case 0:
-            cube.material = color1;
-            color = 1;
-            break;
-          case 1: 
-            cube.material = color2;
-            color = 2;
-            break;
-          case 2:
-            cube.material = color0;
-            color = 0;
-            break;
-
-          default:
-            break;
-        }
-      }
-
-      if (time > 180) time = 0;
-
-      renderer.render( scene, camera );
-      time++;
+    for (let i = 0; i <  objects.length; i++) {
+      objects[i].rotation.y += 0.01;
+      objects[i].rotation.z += 0.01;
+      objects[i].rotation.x += 0.01;
+           
   };
+  renderer.render( scene, camera );
 
+
+
+}
+
+   
+    
+
+
+    
   camera.position.z = 5;
 
-  setInterval(animationLoop, 20);
+  setInterval(animationLoop, 60);
 }
 
 
