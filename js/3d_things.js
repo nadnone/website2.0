@@ -14,8 +14,7 @@ function hiddenCube()
   document.body.appendChild( renderer.domElement );
 
   const geometry = new THREE.BoxGeometry( 3, 3, 3);
-  const color0 = new THREE.MeshPhongMaterial( { color: 0x0e1fe3 } );
-
+  const color0 = new THREE.MeshPhongMaterial( { color: 0x0e1fe3, specular: 0x222222, shininess: 3*10**3 } );
 
   xPos = [10, 0, -10]
 
@@ -34,7 +33,7 @@ function hiddenCube()
 
 
   const light = new THREE.PointLight(0xffffff, 10, 500)
-  light.position.set(0.0, 0.0, 50.0)
+  light.position.set(0.0, 0.0, 400.0)
   scene.add(light)
 
 
