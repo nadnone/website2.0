@@ -1,8 +1,6 @@
 
-/*
-  SKILLS SPECTRO GRAPH
+/* SKILLS SPECTRO GRAPH */
 
-  */
   function spectralSkillsLoad(){
 
     let contenu = document.getElementById("Skills");
@@ -60,35 +58,6 @@
        canvas.appendChild(path_skills)
    
      }
-   /*
-     for (let i = 0; i < skills.length; i++) {
-   
-       let svg = document.createElement("svg")
-   
-       let path_skills_hover = document.createElement("path")
-   
-       let coordX = centercanvas.x+(r * Math.cos(i*rad))
-       let coordY = centercanvas.y+(r * Math.sin(i*rad))    
-       
-       let coordfX = centercanvas.x+(r * Math.cos((i+1)*rad))
-       let coordfY = centercanvas.y+(r * Math.sin((i+1)*rad))
-   
-       path_skills_hover.setAttribute("d", `M${centercanvas.x} ${centercanvas.y}`)
-   
-       let cacheattr = path_skills_hover.getAttribute("d")
-   
-       path_skills_hover.setAttribute("d", `${cacheattr}   L${coordX} ${coordY}   L${coordfX} ${coordfY} L${centercanvas.x} ${centercanvas.y} Z`)
-       path_skills_hover.setAttribute("id", `stats`)
-   
-       path_skills_hover.setAttribute("class", `skillHover`)
-   
-       svg.setAttribute("id", `ID${skills[i].title}`)
-       svg.appendChild(path_skills_hover)
-       canvas.appendChild(svg)
-   
-   
-     }
-   */
    
      polyline_info.setAttribute("style", "fill:none;stroke:white;stroke-width:0.2;")
    
@@ -128,7 +97,7 @@
      }
    
    /* 
-       SKILLS old tri function
+       SKILLS old trie function ( for small screens )
     */
    
    function skillsort(){

@@ -14,7 +14,7 @@ function hiddenCube()
   document.body.appendChild( renderer.domElement );
 
   const geometry = new THREE.BoxGeometry( 3, 3, 3);
-  const color0 = new THREE.MeshPhongMaterial( { color: 0x0e1fe3, specular: 0x222222, shininess: 3*10**3 } );
+  const color0 = new THREE.MeshPhongMaterial( { color: 0x0e1fe3, specular: 0x222222, shininess: 10**4 } );
 
   xPos = [10, 0, -10]
 
@@ -63,7 +63,7 @@ function hiddenCube()
 }
 
 
-/*
+
 let launched = false
 addEventListener("keypress", (event) => {
   if (event.key = ' ' && !launched) 
@@ -72,5 +72,3 @@ addEventListener("keypress", (event) => {
     launched = true;
   }
 });
-
-*/

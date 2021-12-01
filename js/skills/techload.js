@@ -1,3 +1,7 @@
+/*
+initialement pour afficher des technologies, utilisés finalemnt pour afficher les langues
+*/
+
 function techload(){
     let canvas = document.getElementById("canvas");
 

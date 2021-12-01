@@ -20,26 +20,28 @@ function goButton(where){
   document.getElementById(where).parentNode.style.display = "flex";
 
 
-  //document.body.scrollTo(0, window.innerHeight*2);
+
+  /* SCROLL */
+
   let i = 0;
+  let pixels = 100;
 
   let scrollID = setInterval(()=> {
-    if(i*100 >= document.body.scrollHeight)
+    if(i*pixels >= document.body.scrollHeight)
     {
       clearInterval(scrollID);
       return;
     }
 
-    window.scrollTo(0, i*100);
-    i += 0.5; 
-  }, 60);
+    window.scrollTo(0, i*pixels);
+    i++; 
+  }, 10);
   
   window.addEventListener("wheel", () => {
     clearInterval(scrollID);
   });
 
-  //document.querySelector(".main .container").style.opacity = "0";
-  
+  // ***************
   
 
   sectionOpened = where;
@@ -73,13 +75,13 @@ function goLink(link){
 
 
 
-/* AGE EVENT */
+/* AGE EVENT 
 
 function show_ageInfo(){
   document.getElementById("code_show").style.visibility = "visible";
 }
 
-/* ************ */
+ ************ */
 
 
 
@@ -118,9 +120,6 @@ async function preload(){
     document.querySelector(".menubg").style.opacity = "1";
   }, 500);
 
-  setTimeout(() => {
-    hiddenCube();
-  }, 1600);
 
   if (window.screen.width > 1201 || window.screen.orientation.type.includes("landscape")) writesite();
   //writesite();
