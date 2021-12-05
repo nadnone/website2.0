@@ -2,7 +2,7 @@ const gallery_items = [
 
     {
     
-        "title": "Learn_OpenGL450 (en cours)",
+        "title": "Learn_OpenGL450 (en pause)",
         "desc": "Je suis en train d'apprendre à utiliser la bibliothèque graphique OpenGL 4.5, plus d'information sur Github",
         "link": "https://github.com/nadnone/learn_opengl450",
         "image": "https://raw.githubusercontent.com/nadnone/learn_opengl450/main/readme_res/demo.gif"
