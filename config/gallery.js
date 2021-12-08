@@ -1,7 +1,12 @@
 const gallery_items = [
 
     {
-    
+        "title": "Concept d'éducation P2P",
+        "desc": "Je suis en train de mettre sur papier un concept que j'ai imaginé",
+        "link": "https://github.com/nadnone/EducationLibre",
+        "image": "https://raw.githubusercontent.com/nadnone/EducationLibre/eda61cc4512f4c5bb50a5a2787a0474f1aef0e6c/mindmap_association_fonctionnement_du_syst%C3%A8me.svg"
+    },   
+    {
         "title": "Learn_OpenGL450 (en pause)",
         "desc": "Je suis en train d'apprendre à utiliser la bibliothèque graphique OpenGL 4.5, plus d'information sur Github",
         "link": "https://github.com/nadnone/learn_opengl450",
