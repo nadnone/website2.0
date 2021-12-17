@@ -3,7 +3,7 @@ const gallery_items = [
     {
         "title": "Concept d'éducation P2P",
         "desc": "Je suis en train de mettre sur papier un concept que j'ai imaginé",
-        "link": "https://github.com/nadnone/EducationLibre",
+        "link": "https://nadnone.github.io/EducationLibre/",
         "image": "https://raw.githubusercontent.com/nadnone/EducationLibre/eda61cc4512f4c5bb50a5a2787a0474f1aef0e6c/mindmap_association_fonctionnement_du_syst%C3%A8me.svg"
     },   
     {
