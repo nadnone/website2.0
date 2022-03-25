@@ -134,6 +134,31 @@ body, html {
     text-decoration: underline;
     cursor: pointer;
 }
+
+@keyframes logoScaleAnim {
+    from {
+        transform: scale(1);
+        background-color: azure;
+        border-radius: 15%;
+    }
+    to {
+        transform: scale(1.5);
+        background-color: azure;
+        border-radius: 15%;
+    }
+}
+
+.logoLink {
+    padding: .5em;
+}
+.logoLink:hover {
+   animation-name: logoScaleAnim;
+   animation-duration: 1s;
+   animation-iteration-count: infinite;
+   animation-direction: alternate;
+   cursor: pointer;
+}
+
 /* LISTE */
 ul li {
     list-style-type: circle;
@@ -272,6 +297,9 @@ text{
 CONTACT
 */
 
+#Contact .categorie {
+    flex-direction: column;
+}
 
 #Contact .contenu {
     display: flex;
@@ -287,7 +315,6 @@ CONTACT
     width: 250px;
     border-radius: 50%;
     border: var(--primary_dark) solid 10pt;
-
 }
 
 

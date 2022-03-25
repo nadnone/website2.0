@@ -10,6 +10,9 @@ function techload(){
         y: parseInt(canvas.getAttribute("height")/2)
       }
 
+    
+    const bar_width = window.innerWidth / 6;
+
 
     // on dessine
     let svg = document.createElement("svg");
@@ -28,7 +31,7 @@ function techload(){
 
 
         let progressbar_base = document.createElement("rect");
-        progressbar_base.setAttribute("width", 400);
+        progressbar_base.setAttribute("width", bar_width);
         progressbar_base.setAttribute("height", window.screen.height < 600 ? 30 : 60);
         progressbar_base.setAttribute("x", centercanvas.x/1.4);
         progressbar_base.setAttribute("y", yPos);
@@ -37,7 +40,7 @@ function techload(){
     
         
         let progressbar_pourcent = document.createElement("rect");
-        progressbar_pourcent.setAttribute("width", (400 / 100) * technologies_stats[i].pourcent / (window.screen.height < 600 ? 2 : 1));
+        progressbar_pourcent.setAttribute("width", (bar_width / 100) * technologies_stats[i].pourcent / (window.screen.height < 600 ? 2 : 1));
         progressbar_pourcent.setAttribute("height", window.screen.height < 600 ? 30 : 60);
         progressbar_pourcent.setAttribute("x", centercanvas.x/1.4);
         progressbar_pourcent.setAttribute("y", yPos);
