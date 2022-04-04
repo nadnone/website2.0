@@ -3,6 +3,10 @@
     <head>
       <meta charset="utf-8">
       
+      <!-- Content Security Policy -->
+      <meta http-equiv="Content-Security-Policy" content="style-src 'unsafe-inline' 'self' https://fonts.googleapis.com/css2">
+
+
       <link rel="stylesheet" href="css/master.css"/>
       <link rel="stylesheet" href="css/default_main.css"/>
       <link rel="stylesheet" href="css/mobile_landscape.css"/>
@@ -18,9 +22,6 @@
       <script src="config/skills.js"></script>
       <script src="config/gallery.js"></script>
       <script src="config/techs.js"></script>
-
-      <script src="./js/libs/three.js"></script>
-      <script src="./js/3d_things.js" defer></script>
 
       <script src="js/main.js" charset="utf-8"></script>
       <script src="js/themes.js" defer charset="utf-8"></script>
@@ -116,8 +117,6 @@
     <div id="menubg" class="menubg">
 
       <div id="main" class="main" style="z-index: 0;">
-
-        <canvas style="width: 100%; height: 100%; display: block; position: fixed; top: 0; left: 0; z-index: -999;"></canvas>
 
         <div class="container" style="z-index: 0;">
           <div id="blocktowrite" class="overbuttons">
