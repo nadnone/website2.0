@@ -69,5 +69,24 @@ export default [
             "secondary": "#ffffff",
         }
         
+    },
+    {
+        "name": "Brown",
+        "primary": {
+            "main": "#4e342e",
+            "light": "#7b5e57",
+            "dark": "#260e04",
+        },
+        "secondary": {
+            "main": "#795548",
+            "light": "#a98274",
+            "dark": "#4b2c205f",
+        },
+        "text": {
+            "primary": "#ffffff",
+            "secondary": "#ffffff",
+        }
+        
     }
+
 ];
