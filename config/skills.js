@@ -1,5 +1,4 @@
-let skills = 
-[
+export default [
     {
         "title": "Javascript",
         "pourcent": 65
@@ -9,7 +8,7 @@ let skills =
         "pourcent": 40
     },
     {
-        "title": "Réseau",
+        "title": "Network",
         "pourcent": 50
     },
     {
@@ -23,4 +22,4 @@ let skills =
         "title": "GNU/Linux",
         "pourcent": 30
     }
-];
+]

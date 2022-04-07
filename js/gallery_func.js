@@ -1,12 +1,15 @@
-function loadGallery(){
+import gallery_items from '../config/gallery.js';
+import { goLink } from './buttons_events.js';
+
+
+export function loadGallery(){
 
     let contenu = document.querySelector("#Gallery .categorie")
-
-    contenu.innerHTML = ""
+   
+    // clear 
+    contenu.innerHTML = "";
     
     for (let i = 0; i < gallery_items.length; i++) {
-
-
 
         let item = document.createElement("div")
         item.setAttribute("class", "item")
@@ -35,5 +38,4 @@ function loadGallery(){
         contenu.appendChild(item)
 
     }
-
 }

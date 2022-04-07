@@ -1,17 +1,19 @@
 /*
 initialement pour afficher des technologies, utilisés finalemnt pour afficher les langues
 */
+import technologies_stats from '../../config/techs.js';
 
-function techload(){
+
+export function techload(){
     let canvas = document.getElementById("canvas");
+    const bar_width = window.innerWidth / 5;
 
     let centercanvas = {
-        x: parseInt(canvas.getAttribute("width")), // on bouge un peu à droite
+        x: parseInt(canvas.getAttribute("width"))+bar_width/2, // on bouge un peu à droite
         y: parseInt(canvas.getAttribute("height")/2)
       }
 
     
-    const bar_width = window.innerWidth / 6;
 
 
     // on dessine

@@ -12,26 +12,15 @@
       <link rel="stylesheet" href="css/mobile_landscape.css"/>
       <link rel="stylesheet" href="css/mobile_portrait.css"/>
       <link rel="stylesheet" href="css/big_screen.css"/>
-
+      
 
       <link rel="shortcut icon" href="res/logo_nf.png"/>
 
       
       <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
       
-      <script src="config/skills.js"></script>
-      <script src="config/gallery.js"></script>
-      <script src="config/techs.js"></script>
 
-      <script src="js/main.js" charset="utf-8"></script>
-      <script src="js/themes.js" defer charset="utf-8"></script>
-      <script src="js/gallery_func.js" defer charset="utf-8"></script>
-      <script src="js/skills/skillLoads.js" charset="utf-8"></script>
-      <script src="js/skills/techload.js" charset="utf-8"></script>
-
-      <script src="js/window_resize_mobile.js" charset="utf-8"></script>
-      <script src="js/writesitename.js" charset="utf-8"></script>
-
+      <script type="module" src="js/main.js"></script>
 
       <title>Portfolio</title>
 
@@ -79,39 +68,11 @@
               Theme Moon (Custom)
             </span>
             <div id="select_theme_selector">
-              
-              <div class="conteneur">
-
-                <div class="select_theme_options">Moon</div>
-                <div class="select_theme_options">Glass</div>
-                <div class="select_theme_options">Juice</div>
-                <div class="select_theme_options">Blackboard</div>
-
-              </div>
-        
-
+                <div class="conteneur"></div>
             </div>
 
           </div>
         </div>
-
-
-    <!--<div class="bg">
-      <div class="super_container">
-        <div class="container">
-          <div class="titre">
-            Welcome
-          </div>
-          <div class="sous_titre">
-            please scroll :)
-          </div>
-        </div>
-      </div>
-    </div>-->
-
-
-
-
 
 
     <div id="menubg" class="menubg">
@@ -122,27 +83,25 @@
           <div id="blocktowrite" class="overbuttons">
           </div>
           <div class="buttons">
-            <!--<div onclick="goButton('think')" class="button left_menu_btn">
-              À propos
-            </div>-->
-            <div onclick="goButton('Skills')" class="button">
+
+            <div class="button">
               Skills
             </div>
-            <div onclick="goButton('Gallery')" class="button">
-              Gallerie
+            <div class="button">
+              Gallery
             </div>
-            <div onclick="goButton('Contact')" class="button right_menu_btn">
+            <div class="button right_menu_btn">
               Contact
             </div>
+
           </div>
         
         
         </div>
       </div>
       <div class="footer">
-          Merci à Phoenix Rigo et Rafael Reyes pour l'image de fond. Merci à Thibault Blaser pour le logo
           <br/>
-          version: 2 (aucun cookie n'est enregistré)
+          version: 2 (No cookies saved)
           <br/>
           Nadir Felder
         </div>
@@ -152,33 +111,6 @@
 
 
 
-
-
-
-
-
-      <!--<div id="think" class="popup">
-          <div class="titre">
-            À propos de moi
-          </div>
-          <div class="contenu">
-            
-            <span>
-              Je suis une personne de 
-              <span id="mon_age"></span> ans au parcours plutôt atypique qui vit dans le canton de Neuchâtel.<br />
-              <br />
-            </span>
-                            
-   
-          </div>
-          <div class="picture_box">
-            <div class="picture"></div>
-          </div>
-          <div onclick="goBack(this)" class="back">
-            Retour
-          </div>
-      </div>
-    -->
 
 
 
@@ -213,10 +145,10 @@
           <div class="contenu">
             <div class="picture_circle"></div>
             <div class="subbox">
-              <div>Vous pouvez me contacter via les liens suivants</div>
+              <div>You can contact me with the next links</div>
               <div class="categorie">
                 <a style="color: var(--text_on_secondary); margin-top: 5pt;" href="mailto:nadir.felder@nadnone.ch">nadir.felder@nadnone.ch</a>
-                <img class="logoLink" onclick="goLink('https://www.linkedin.com/in/nadnone/');" src="https://content.linkedin.com/content/dam/me/business/en-us/amp/brand-site/v2/bg/LI-Bug.svg.original.svg" alt="LinkedIn">
+                <img class="logoLink" src="https://content.linkedin.com/content/dam/me/business/en-us/amp/brand-site/v2/bg/LI-Bug.svg.original.svg" alt="LinkedIn">
               </div>
             </div>
             

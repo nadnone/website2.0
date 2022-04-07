@@ -1,119 +1,19 @@
+import { themes_load, theme_menu } from './themes.js';
+import { resize } from './window_resize_mobile.js';
+import { writesite } from './writesitename.js';
+import { goButton, goLink } from './buttons_events.js';
 
-/* *********************/
-/* BUTTONS */
-
-
-
-
-// MENU BUTTONS
-
-let sectionOpened = false;
-
-function goButton(where){
-  if (sectionOpened !== false) 
-  {
-     document.getElementById(sectionOpened).parentNode.style.display = "none"; document.getElementById(sectionOpened).style.display = "none"; 
-  }
-
-
-  document.getElementById(where).style.display = "flex";
-  document.getElementById(where).parentNode.style.display = "flex";
-
-
-
-  /* SCROLL */
-
-  let i = 0;
-  let pixels = 100;
-
-  let scrollID = setInterval(()=> {
-    if(i*pixels >= document.body.scrollHeight)
-    {
-      clearInterval(scrollID);
-      return;
-    }
-
-    window.scrollTo(0, i*pixels);
-    i++; 
-  }, 10);
-  
-  window.addEventListener("wheel", () => {
-    clearInterval(scrollID);
-  });
-
-  // ***************
-  
-
-  sectionOpened = where;
-  
-  switch (where) {
-    case "Skills":
-        skillLoad();
-      break;
-
-    case "Gallery":
-        loadGallery();
-      break;
-
-    default:
-      break;
-  }
-  
-}
-
-/* MENU BUTTONS END */
-
-function goLink(link){
-  window.open(link, "_blank");
-
-}
-
-/* BUTTONS END */
-
-
-
-
-
-
-/* AGE EVENT 
-
-function show_ageInfo(){
-  document.getElementById("code_show").style.visibility = "visible";
-}
-
- ************ */
-
-
-
-/* ******** PRE - CHARGEMENT    ********* */
-
-
-
-function skillLoad(){
-
-
-  if(window.innerWidth < 600 && !window.screen.orientation.type.includes("landscape")) {
-    skillsort()
-  }
-  else{  
-    spectralSkillsLoad();
-    techload();
-  }
-}
-
-/* GET AGE */
-/*
-function getAge() {
-  let age = (Date.now() - new Date(1996, 6, 17).getTime()) / 1000;
-  age /= (24 * 3600 * 365)
-  document.getElementById("mon_age").innerText = parseInt(age)
-}
-*/
-
-
-/* ****** */
 
 async function preload(){
+
+
+if (window.screen.width > 1201)
+{
+    resize()
+}
+
+themes_load();
+theme_menu();
 
 /* LAUNcHING FUNCTION */
  setTimeout(() => {
@@ -122,13 +22,32 @@ async function preload(){
 
 
   if (window.screen.width > 1201 || window.screen.orientation.type.includes("landscape")) writesite();
-  //writesite();
 
 }
+
+
+// Events
 
 window.addEventListener("orientationchange", () => {
   window.location.reload();
 });
 
-
 window.addEventListener("DOMContentLoaded", preload);
+
+
+
+// menu
+document.querySelectorAll(".buttons div").forEach((elem) => {
+
+  elem.addEventListener("click", () => {
+    
+    console.log(elem.innerText);
+    goButton(elem.innerText);
+  })
+
+})
+
+// linkedin
+document.querySelector(".logoLink").addEventListener("click", () => {
+  goLink('https://www.linkedin.com/in/nadnone/');
+});

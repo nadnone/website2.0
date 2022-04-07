@@ -36,6 +36,7 @@ body, html {
     flex-direction: column;
     align-items: center;
     background-color: var(--primary);
+    cursor: pointer;
 
 }
 .themes .box_theme:hover{
@@ -135,29 +136,7 @@ body, html {
     cursor: pointer;
 }
 
-@keyframes logoScaleAnim {
-    from {
-        transform: scale(1);
-        background-color: azure;
-        border-radius: 15%;
-    }
-    to {
-        transform: scale(1.15);
-        background-color: azure;
-        border-radius: 15%;
-    }
-}
 
-.logoLink {
-    padding: .5em;
-}
-.logoLink:hover {
-   animation-name: logoScaleAnim;
-   animation-duration: .5s;
-   animation-iteration-count: infinite;
-   animation-direction: alternate;
-   cursor: pointer;
-}
 
 /* LISTE */
 ul li {
@@ -174,6 +153,8 @@ ul li {
     font-size: 24px;
     color: var(--text_on_primary);
     transition: background-color 0.5s;
+    user-select: none;
+    
 }
 .main .button:hover {
     background-color: var(--primary_dark) !important;
@@ -199,8 +180,8 @@ ul li {
 
 
 #Skills{
-    height: max-content;
-    width: max-content;
+    width: 100%;
+    user-select: none;
     /*padding: 15pt;*/
 }
 .skill_pourcent{
@@ -208,11 +189,10 @@ ul li {
     z-index: 1;
 }
 
-/*.skillHover:hover{
+.skill_pourcent:hover{
     fill: var(--primary_light);
-    z-index: 10;
 }
-*/
+
 .skillHover{
     fill: var(--secondary_light);
 }
@@ -255,12 +235,14 @@ text{
     background-color: var(--primary);
     
 }
-#Gallery .item > div {
-    transition: background-color .5s;
+#Gallery .item {
+    opacity: 0.75;
+    transition: opacity .5s;
 }
-#Gallery .item:hover > div {
-    background-color: var(--secondary_light);
-    transition: background-color .5s;
+#Gallery .item:hover {
+    transition: opacity .5s;
+    opacity: 1;
+    cursor: pointer;
 }
 #Gallery .item .img {
     background-size: cover;
@@ -271,7 +253,7 @@ text{
 }
 #Gallery .item .title {
     font-size: 18pt;
-    width: 100%;
+    width: 95%;
     height: 10%;
     margin-top: 5pt;
     padding: 5pt;
@@ -280,7 +262,7 @@ text{
 #Gallery .item .desc {
     background-color: var(--secondary);
     font-size: 11pt;
-    width: 100%;
+    width: 95%;
     padding: 0 5pt;
     height: 40%;
     overflow-y: auto;
@@ -315,8 +297,41 @@ CONTACT
     width: 250px;
     border-radius: 50%;
     border: var(--primary_dark) solid 10pt;
+    user-select: none;
 }
 
+@keyframes logoScaleAnim {
+    from {
+        transform: translateY(0%);
+        background-color: white;
+        border-radius: 15%;
+    }
+    to {
+        transform: translateY(30%);
+        background-color: white;
+        border-radius: 15%;
+    }
+}
+
+#Contact .contenu a:hover {
+    transform: scale(1.5);
+    transition: .5s;
+}
+#Contact .contenu a {
+    transform: scale(1);
+    transition: .5s;
+}
+
+.logoLink {
+    padding: .5em;
+}
+.logoLink:hover {
+   animation-name: logoScaleAnim;
+   animation-duration: .3s;
+   animation-iteration-count: infinite;
+   animation-direction: alternate;
+   cursor: pointer;
+}
 
 
 

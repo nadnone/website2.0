@@ -65,13 +65,16 @@
     .scroll_popup .popup .categorie {
         flex-direction: column;
     }
-    #think {
-        margin-top: 2%;
-        width: 90%;
-    }
 
     #box_info{
         display: none;
+    }
+
+    #Skills {
+        width: 100%;
+        height: max-content;
+        flex-direction: row;
+        flex-wrap: wrap;
     }
 
     #Skills .subtitle{

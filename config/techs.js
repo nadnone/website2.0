@@ -1,11 +1,10 @@
-let technologies_stats = [
+export default [
     {
-        "name": "Anglais",
+        "name": "English",
         "pourcent": 50
     },
     {
-        "name": "Français",
+        "name": "French",
         "pourcent": 80
     }
-    
-];
+]

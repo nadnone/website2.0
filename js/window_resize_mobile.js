@@ -1,4 +1,4 @@
-function resize(){
+export function resize(){
 
     window.addEventListener("resize", (event) =>{
 
@@ -7,10 +7,3 @@ function resize(){
     });
 
 }
-
-
-if (window.screen.width > 1201)
-{
-    resize()
-}
-

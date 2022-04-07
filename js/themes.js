@@ -1,87 +1,72 @@
-function theme_menu(){
+import themes_list from "../config/themes.js";
 
-    let title = document.getElementById("theme_title");
+let title = document.getElementById("theme_title");
+let style = document.documentElement.style;
+let boxtheme = document.querySelector(".box_theme");
+
+export function themes_load() {
+
+    let l = themes_list.length - 1;
+
+    style.setProperty("--primary", themes_list[l].primary.main); 
+    style.setProperty("--secondary", themes_list[l].secondary.main); 
+
+    style.setProperty("--text_on_primary", themes_list[l].text.primary); 
+    style.setProperty("--text_on_secondary", themes_list[l].text.secondary); 
+
+    style.setProperty("--primary_light", themes_list[l].primary.light); 
+    style.setProperty("--primary_dark", themes_list[l].primary.dark); 
+
+    style.setProperty("--secondary_light", themes_list[l].secondary.light); 
+    style.setProperty("--secondary_dark", themes_list[l].secondary.dark); 
+
+    title.innerText = `Theme ${themes_list[l].name}`;
+
+
+    let theme_select_container = document.querySelector("#select_theme_selector .conteneur");
+    
+    themes_list.forEach(theme => {
+
+        let theme_item = document.createElement("div");
+        theme_item.className = "select_theme_options";
+        theme_item.innerText = theme.name;
+
+        theme_select_container.appendChild(theme_item);
+    });
+
+}
+
+
+export function theme_menu(){
+
     let options = document.getElementsByClassName("select_theme_options");
-    let boxtheme = document.getElementsByClassName("box_theme")[0];
     
     boxtheme.addEventListener("click", (event)=> {
 
-        // TODO OPTIMIZE !
-
-
         if (event.target.className ===  "select_theme_options"){
-            let theme = event.target.innerText
-            let style = document.documentElement.style;
+            let theme = event.target.innerText;
 
-            switch(theme){
-                case "Moon":
-                    style.setProperty("--primary", "#0718665f"); 
-                    style.setProperty("--secondary", "#093475"); 
+            themes_list.forEach(themeList => {
+                    if (themeList.name === theme) 
+                    {
+                        style.setProperty("--primary", themeList.primary.main); 
+                        style.setProperty("--secondary", themeList.secondary.main); 
+    
+                        style.setProperty("--text_on_primary", themeList.text.primary); 
+                        style.setProperty("--text_on_secondary", themeList.text.secondary); 
+    
+                        style.setProperty("--primary_light", themeList.primary.light); 
+                        style.setProperty("--primary_dark", themeList.primary.dark); 
+    
+                        style.setProperty("--secondary_light", themeList.secondary.light); 
+                        style.setProperty("--secondary_dark", themeList.secondary.dark); 
+    
+                        title.innerText = `Theme ${themeList.name}`;
+                    }
+                    
+                });
 
-                    style.setProperty("--text_on_primary", "#e0f7fa"); 
-                    style.setProperty("--text_on_secondary", "#e8eaf6"); 
-
-                    style.setProperty("--primary_light", "#0718665f"); 
-                    style.setProperty("--primary_dark", "#071866"); 
-
-                    style.setProperty("--secondary_light", "#4e5b7055"); 
-                    style.setProperty("--secondary_dark", "#093475"); 
-
-                    title.innerText = "Theme Moon"
-
-                    break;
-
-                case "Blackboard":
-                    style.setProperty("--primary", "#2b2b2b"); 
-                    style.setProperty("--secondary", "#000000"); 
-
-                    style.setProperty("--text_on_primary", "#ffffff"); 
-                    style.setProperty("--text_on_secondary", "#ffffff"); 
-
-                    style.setProperty("--primary_light", "#383838"); 
-                    style.setProperty("--primary_dark", "#616161"); 
-
-                    style.setProperty("--secondary_light", "#3636365f"); 
-                    style.setProperty("--secondary_dark", "#000000"); 
-
-                    title.innerText = "Theme Blackboard"
-
-                    break;
-
-
-                case "Glass":
-
-                    style.setProperty("--primary", "#5555555f"); 
-                    style.setProperty("--secondary", "#ababab"); 
-
-                    style.setProperty("--text_on_primary", "#e0f7fa"); 
-                    style.setProperty("--text_on_secondary", "#e8eaf6"); 
-
-                    style.setProperty("--primary_light", "#8f92a15f"); 
-                    style.setProperty("--primary_dark", "#c1bdbd55"); 
-
-                    style.setProperty("--secondary_light", "#c4c4bc5f"); 
-                    style.setProperty("--secondary_dark", "#70707055"); 
-
-                    title.innerText = "Theme Glass"
-
-                    break;
-
-                case "Juice":
-                    style.setProperty("--primary", "#fb8c005f"); 
-                    style.setProperty("--secondary", "#ffeb3b"); 
-
-                    style.setProperty("--text_on_primary", "#212121"); 
-                    style.setProperty("--text_on_secondary", "#795548"); 
-
-                    style.setProperty("--primary_light", "#ffbd455f"); 
-                    style.setProperty("--primary_dark", "#c25e00"); 
-
-                    style.setProperty("--secondary_light", "#ffff7255"); 
-                    style.setProperty("--secondary_dark", "#c8b900"); 
-
-                    title.innerText = "Theme Juice"
-            }
+                    
 
             for (let i = 0; i < options.length; i++) {
 
@@ -100,8 +85,3 @@ function theme_menu(){
     });
 
   }
-
-
-
-
-  theme_menu();
