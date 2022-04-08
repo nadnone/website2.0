@@ -10,7 +10,7 @@ export function addInfoBox(contenu, event) {
 
     console.log(event.x);
 
-    svg.style.height = "100px";
+    svg.style.height = "200px";
     svg.style.width = "300px";
     svg.style.backgroundColor = "red";
     svg.style.position = "absolute";
@@ -18,5 +18,5 @@ export function addInfoBox(contenu, event) {
     svg.id = "infobox";
 
 
-     contenu.appendChild(svg)
-    }
+    contenu.appendChild(svg)
+  }

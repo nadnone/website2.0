@@ -172,7 +172,7 @@ ul li {
 
 
 #Skills{
-    width: 100%;
+    width: 95%;
     user-select: none;
     /*padding: 15pt;*/
 }
@@ -250,6 +250,7 @@ text{
     margin-top: 5pt;
     padding: 5pt;
     background-color: var(--secondary);
+    height: max-content;
 }
 #Gallery .item .desc {
     background-color: var(--secondary);
