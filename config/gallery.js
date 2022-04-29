@@ -1,4 +1,10 @@
-export default [   
+export default [  
+    {
+        "title": "Pong Color",
+        "desc": "Just for fun, because i was bored",
+        "link": "https://nadnone.github.io/pong_color/",
+        "image": "res/pong_color_myown.gif"
+    }, 
     {
         "title": "Learn_OpenGL450 (On Break)",
         "desc": "I learnt a bit about OpenGL 4.5, more on GitHub.",

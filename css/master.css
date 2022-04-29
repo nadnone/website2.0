@@ -237,11 +237,11 @@ text{
     cursor: pointer;
 }
 #Gallery .item .img {
-    background-size: cover;
+    background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
-    width: 95%;
-    height: 65%;
+    width: 80%;
+    height: 80%;
 }
 #Gallery .item .title {
     font-size: 18pt;
