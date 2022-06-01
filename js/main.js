@@ -46,8 +46,3 @@ document.querySelectorAll(".buttons div").forEach((elem) => {
   })
 
 })
-
-// linkedin
-document.querySelector(".logoLink").addEventListener("click", () => {
-  goLink('https://www.linkedin.com/in/nadnone/');
-});

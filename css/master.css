@@ -293,14 +293,7 @@ CONTACT
     user-select: none;
 }
 
-@keyframes logoScaleAnim {
-    from {
-        transform: translateY(0%) scale(.8);
-    }
-    to {
-        transform: translateY(30%) scale(1);
-    }
-}
+
 
 #Contact .contenu a:hover {
     transform: scale(1.5);
@@ -311,26 +304,8 @@ CONTACT
     transition: .5s;
 }
 
-.logoLink {
-    padding: .5em;
-    border-radius: 15%;
-    background-color: white;
-    transform: scale(0.8);
-}
-.logoLink:hover {
-   animation-name: logoScaleAnim;
-   animation-duration: .3s;
-   animation-iteration-count: infinite;
-   animation-direction: alternate;
-   cursor: pointer;
-}
-
-
 
 /* END CONTACT*/
-
-
-
 
 
 

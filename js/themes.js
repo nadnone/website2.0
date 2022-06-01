@@ -44,10 +44,9 @@ export function theme_menu(){
     boxtheme.addEventListener("click", (event)=> {
 
         if (event.target.className ===  "select_theme_options"){
-            let theme = event.target.innerText;
 
             themes_list.forEach(themeList => {
-                    if (themeList.name === theme) 
+                    if (themeList.name === event.target.innerText) 
                     {
                         style.setProperty("--primary", themeList.primary.main); 
                         style.setProperty("--secondary", themeList.secondary.main); 
